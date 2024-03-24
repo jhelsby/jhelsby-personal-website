@@ -144,7 +144,7 @@ a:visited {
 
 .photo {
   margin-right: 10px;
-  /* max-width: 100%; */
+  max-width: 100%;
   max-height: 230px;
   border: 2px solid #888888;
   padding: 0px;

@@ -1,8 +1,6 @@
 import React from 'react';
 import Projects from './Projects';
 import { Sidebar, SidebarToggle } from './Sidebar';
-import Image from 'next/image';
-import profilePic from '../public/photo.jpg'
 
 export default function Home() {
 
@@ -13,8 +11,8 @@ export default function Home() {
         <h1> <SidebarToggle /> John Helsby&apos;s Personal Website.</h1>
 
         <div className="photo-container">
-          <Image
-            src={profilePic}
+          <img
+            src="/photo.jpg"
             alt="My Photo"
             className="photo"
           />
