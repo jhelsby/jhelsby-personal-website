@@ -2,6 +2,7 @@ import React from 'react';
 import Projects from './Projects';
 import { Sidebar, SidebarToggle } from './Sidebar';
 import Image from 'next/image';
+import profilePic from '../public/photo.jpg'
 
 export default function Home() {
 
@@ -13,7 +14,7 @@ export default function Home() {
 
         <div className="photo-container">
           <Image
-            src="/photo.JPG"
+            src={profilePic}
             alt="My Photo"
             className="photo"
           />
