@@ -21,6 +21,8 @@ const Sidebar = React.forwardRef<HTMLDivElement>((props, ref) => {
   );
 });
 
+Sidebar.displayName = 'Sidebar';
+
 interface BurgerMenuIconProps {
   onClick: () => void;
 }
