@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import burgerMenuSvg from '../public/burger-menu.svg';
+import Image from 'next/image';
 
 
 const Sidebar = React.forwardRef<HTMLDivElement>((props, ref) => {
@@ -28,11 +29,13 @@ const BurgerMenuIcon: React.FC<BurgerMenuIconProps> = ({ onClick }) => {
   const { src } = burgerMenuSvg;
 
   return (
-    <img
+    <Image
       src={src}
       alt="Menu Icon"
+      width={30}
+      height={30}
       onClick={onClick}
-      style={{ width: '30px', height: '30px', cursor: 'pointer' }} // Ensure the cursor is pointer
+      style={{ cursor: 'pointer' }} // Ensure the cursor is pointer
     />
   );
 };

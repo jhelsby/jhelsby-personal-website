@@ -37,7 +37,7 @@ const TranslationChat: ProjectFunction = () => {
   return {
     description: (
       <div>
-      <p>TranslationChat is a real-time text messaging application which translates all messages into the user's preferred written language. It allows users from all over the world to bypass language barriers and easily communicate with each other via a simple and intuitive UI.</p>
+      <p>TranslationChat is a real-time text messaging application which translates all messages into the user&apos;s preferred written language. It allows users from all over the world to bypass language barriers and easily communicate with each other via a simple and intuitive UI.</p>
 
       <p>TranslationChat is built and deployed using a number of AWS services, and integrated into this website.</p>
       </div>),
