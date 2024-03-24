@@ -113,7 +113,7 @@ function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProject
 
   return (
     <div>
-      <div style={urlStyle}>{url && <a href={url} target="_blank" rel="noopener noreferrer" className="button-link">Project URL</a>} {<a href={repo} target="_blank" rel="noopener noreferrer" className="button-link" style={urlStyle}>
+      <div style={urlStyle}>{url && <a href={url} target="_blank" rel="noopener noreferrer" className="button-link">App Website</a>} {<a href={repo} target="_blank" rel="noopener noreferrer" className="button-link" style={urlStyle}>
         <span style={urlTextStyle}>GitHub</span>
         <Image
           src="/github-mark.svg"

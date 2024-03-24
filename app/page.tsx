@@ -37,7 +37,7 @@ export default function Home() {
 
           <p>If you&apos;d like to contact me for whatever reason, you can email me <a href="/contact" >here</a>.</p>
 
-          <p>Finally, listed below are a few of my coding projects for your perusal and (hopefully!) pleasure. Please select a project to read more, view the codebase, or see the application in action.</p>
+          <p>Finally, listed below are a few of my coding projects, in case you happen to be interested. Please select a project to read more, view the codebase, or see the application in action.</p>
           
           <p> Thank you so much for reading - and please don&apos;t hesitate to <a href="/contact">get in touch</a> or <a href="https://www.linkedin.com/in/john-h-366980236/" >connect on LinkedIn</a> if you have any comments or questions. Have a great rest of your day!</p>
 
