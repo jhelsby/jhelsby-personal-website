@@ -53,12 +53,12 @@ const Conduit: ProjectFunction = () => {
       <div>
       <p>TypeScript, Next.js, Python and Django.</p>
 
-      <p>Noteworthy is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. In technical terms, Dan worked mostly on the frontend, and I mostly on the <a href="https://github.com/jhels/noteworthy-backend">backend</a>.</p>
+      <p>Noteworthy is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. In technical terms, Dan worked mostly on the <a href="https://github.com/dan-smith-tech/conduit">frontend</a>, and I mostly on the <a href="https://github.com/jhels/noteworthy-backend">backend</a>.</p>
     </div>
     ),
     technicalDetails: <div>expandable content</div>,
-    url: "http://localhost:3000/",
-    repo: "https://github.com/dan-smith-tech/noteworthy"
+    url: "https://www.conduits.link/",
+    repo: "https://github.com/jhels/noteworthy-backend"
   };
 }
 
