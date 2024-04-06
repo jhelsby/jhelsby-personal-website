@@ -14,7 +14,6 @@ export default function Contact() {
       <Sidebar />
       <div id="page-wrap">
         <h1><SidebarToggle /> Contact Me</h1>
-        <p>For the reasons of privacy, spam-avoidance, and testing my AWS serverless knowledge, I&apos;ve opted to provide the contact form below instead of publishing my email address on this website. I hope you can forgive me for making you fill in a Captcha!</p> 
         <p>Please fill in the form to contact me by email, or <a href="https://www.linkedin.com/in/john-h-366980236/" >connect with me on LinkedIn</a> if you&apos;d prefer.</p>
         <form onSubmit={handleSubmit}>
           <div>

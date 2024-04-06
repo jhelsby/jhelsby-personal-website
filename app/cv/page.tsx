@@ -14,7 +14,7 @@ export default function CV() {
       <Sidebar />
       <div id="page-wrap">
         <h1><SidebarToggle /> Request a copy of my CV.</h1>
-        <p>For the twin reasons of privacy and testing my AWS serverless knowledge, I&apos;ve opted not to make my CV publicly available. If you would like to see it, please fill in the form below. If and when I approve your request, you will be sent a copy of my most recent CV automatically.</p>
+        <p>For privacy reasons, I&apos;ve opted not to make my CV publicly available - I hope you can forgive me for this! If you would like to see it, please fill in the form below. If and when I approve your request, you will be sent a copy of my most recent CV automatically.</p>
         <p>Alternatively, please feel free to <a href="/contact">contact me by email</a>, or <a href="https://www.linkedin.com/in/john-h-366980236/" >connect with me on LinkedIn</a> if you&apos;d prefer.</p>
         <form onSubmit={handleSubmit}>
           <div>
