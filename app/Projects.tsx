@@ -28,8 +28,9 @@ function Projects() {
 
 const ThisWebsite: ProjectFunction = () => {
   return {
-    description: (<p>I built this static website using HTML, CSS, TypeScript, React and Next.js, and deployed it with Vercel. The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, and the Request My CV page is implemented using various AWS services.</p>),
-    technicalDetails: <div>expandable content</div>,
+   
+    description: (<div><p>I built this static website using HTML, CSS, TypeScript, React and Next.js.</p><p>The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, {/* , and the Request My CV page is implemented using various AWS services, */}and I deployed the site with <a href="https://vercel.com/">Vercel</a>. </p></div>),
+    // technicalDetails: <div>expandable content</div>,
     repo: "https://github.com/jhels/personal-website"
   };
 }
@@ -54,7 +55,7 @@ const Conduit: ProjectFunction = () => {
       <div>
       <p>TypeScript, Next.js, Python and Django.</p>
 
-      <p>Conduit is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. In technical terms, Dan is primarily responsible for the <a href="https://github.com/conduits-link/core">frontend</a>, and I for the <a href="https://github.com/conduits-link/backend">backend</a>, but there has been a lot of crossover in the development process.</p>
+      <p>Conduit is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. Dan built most of the <a href="https://github.com/conduits-link/core">frontend</a>, and I most of the <a href="https://github.com/conduits-link/backend">backend</a>.</p>
     </div>
     ),
     technicalDetails: <div>expandable content</div>,
@@ -65,7 +66,14 @@ const Conduit: ProjectFunction = () => {
 
 const Deform: ProjectFunction = () => {
   return {
-    description: <p>DSP in C++, for Max/MSP.</p>,
+    description: <div><p>DSP in C++, for Max/MSP.</p>
+    <p>The idea of this project was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>.</p>
+    <p>See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!</p>
+    <video width="640" height="360" controls>
+      <source src="/deform_demo.mp4" type="video/mp4"/>
+      Your browser does not support the video tag.
+      </video>
+    </div>,
     technicalDetails: <div>expandable content</div>,
     repo: "https://github.com/jhels/deform-"
   };
@@ -80,7 +88,7 @@ const Deform: ProjectFunction = () => {
 // Holds all necessary information for each project.
 type ProjectInfo = {
   description: ReactNode;
-  technicalDetails: ReactNode;
+  technicalDetails?: ReactNode;
   url?: string; // Use ? because not all projects are deployable.
   repo: string;
 }
@@ -119,7 +127,8 @@ function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProject
 
   return (
     <div>
-      <div style={urlStyle}>{url && <a href={url} target="_blank" rel="noopener noreferrer" className="button-link">App Website</a>} {<a href={repo} target="_blank" rel="noopener noreferrer" className="button-link" style={urlStyle}>
+      <div style={urlStyle}>
+        {<a href={repo} target="_blank" rel="noopener noreferrer" className="button-link" style={urlStyle}>
         <span style={urlTextStyle}>GitHub</span>
         <Image
           src="/github-mark.svg"
@@ -127,17 +136,22 @@ function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProject
           width={20}
           height={20}
         />
-      </a>}</div>
+        </a>}
+        {url && <a href={url} target="_blank" rel="noopener noreferrer" className="button-link">App Website</a>} 
+      </div>
       {description}
-      <p><button onClick={() => setIsExpanded(!isExpanded)} className="button-technical">
-        {isExpanded ? "Hide Details ▽" : "Show Technical Details ▷"}
-      </button>
-      {isExpanded && (
-          <div style={detailsContainerStyle}>
-            {technicalDetails}
-          </div>
-        )}
-      </p>
+      {technicalDetails !== undefined && (
+        <p>
+          <button onClick={() => setIsExpanded(!isExpanded)} className="button-technical">
+            {isExpanded ? "Hide Details ▽" : "Show Technical Details ▷"}
+          </button>
+          {isExpanded && (
+            <div style={detailsContainerStyle}>
+              {technicalDetails}
+            </div>
+          )}
+        </p>
+      )}
     </div>
   );
 }

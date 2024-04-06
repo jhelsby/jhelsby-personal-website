@@ -58,6 +58,7 @@ const SidebarToggle = () => {
     { text: 'GitHub', url: 'https://github.com/jhels/' },
     { text: 'LinkedIn', url: 'https://www.linkedin.com/in/john-h-366980236/' },
     { text: 'CV', url: '/cv' },
+    { text: 'Blog', url: '/blog' },
     { text: 'Contact', url: '/contact' }
     // Add more links as needed
   ];

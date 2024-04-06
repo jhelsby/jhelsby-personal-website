@@ -42,7 +42,7 @@ export default function Home() {
           <p> Thank you for reading - and please don&apos;t hesitate to <a href="/contact">get in touch</a> or <a href="https://www.linkedin.com/in/john-h-366980236/" >connect on LinkedIn</a> if you have any comments or questions. Have a great rest of your day!</p>
 
           <p>- John. 😊</p>
-          <h2>Projects</h2>
+          <h2>Projects.</h2>
         </div>
         <div id="projects">
           <Projects />
