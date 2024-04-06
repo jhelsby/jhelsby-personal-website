@@ -1,7 +1,9 @@
 'use client'
 
 import React, { ReactNode, useState } from 'react';
+import classNames from 'classnames';
 import Image from 'next/image';
+
 
 // ###########################
 // #                         #
@@ -14,7 +16,7 @@ function Projects() {
   const buttonOptions = [
     { label: 'This website', project: ThisWebsite },
     { label: "Conduit", project: Conduit},
-    { label: 'TranslationChat', project: TranslationChat},
+    // { label: 'TranslationChat', project: TranslationChat},
     { label: "deform~", project: Deform}
   ];
 
@@ -53,12 +55,12 @@ const Conduit: ProjectFunction = () => {
       <div>
       <p>TypeScript, Next.js, Python and Django.</p>
 
-      <p>Noteworthy is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. In technical terms, Dan worked mostly on the <a href="https://github.com/dan-smith-tech/conduit">frontend</a>, and I mostly on the <a href="https://github.com/jhels/noteworthy-backend">backend</a>.</p>
+      <p>Conduit is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. In technical terms, Dan is primarily responsible for the <a href="https://github.com/conduits-link/core">frontend</a>, and I for the <a href="https://github.com/conduits-link/backend">backend</a>, but there has been a lot of crossover in the development process.</p>
     </div>
     ),
     technicalDetails: <div>expandable content</div>,
     url: "https://www.conduits.link/",
-    repo: "https://github.com/jhels/noteworthy-backend"
+    repo: "https://github.com/conduits-link/"
   };
 }
 
@@ -95,7 +97,6 @@ interface RenderProjectProps {
   setIsExpanded: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-// Converts ProjectFunctions into JSX.
 function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProjectProps) {
   const { description, technicalDetails, url, repo } = projectData;
 
@@ -111,6 +112,12 @@ function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProject
     marginRight: '3px', // Adjust the space between text and image
   };
 
+  const detailsContainerStyle = {
+    border: '1px solid black',
+    padding: '10px',
+    borderRadius: '5px',
+  };
+
   return (
     <div>
       <div style={urlStyle}>{url && <a href={url} target="_blank" rel="noopener noreferrer" className="button-link">App Website</a>} {<a href={repo} target="_blank" rel="noopener noreferrer" className="button-link" style={urlStyle}>
@@ -124,9 +131,13 @@ function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProject
       </a>}</div>
       {description}
       <p><button onClick={() => setIsExpanded(!isExpanded)} className="button-technical">
-        {"Technical Details"}
+        {isExpanded ? "Hide Details ▽" : "Show Technical Details ▷"}
       </button>
-      {isExpanded && technicalDetails}
+      {isExpanded && (
+          <div style={detailsContainerStyle}>
+            {technicalDetails}
+          </div>
+        )}
       </p>
     </div>
   );
@@ -141,23 +152,16 @@ interface ProjectToggleProps {
   onClick: () => void;
 }
 
-// Individual button styling and rendering.
 const ProjectToggle: React.FC<ProjectToggleProps> = ({ label, isSelected, onClick }) => {
-  const buttonStyle: React.CSSProperties = {
-    backgroundColor: isSelected ? 'green' : 'red',
-    color: 'white',
-    padding: '8px',
-    margin: '10px',
-    cursor: 'pointer',
-    position: 'relative',
-  };
-  
+  const buttonClass = isSelected ? 'project-button selected-project-button' : 'project-button project-button-hover';
+
   return (
-    <div style={{ display: 'inline-block', marginRight: '10px' }}>
-      <button style={buttonStyle} onClick={onClick}>
-        {label}
-      </button>
-    </div>
+    <button
+      className={buttonClass}
+      onClick={onClick}
+    >
+      {label}
+    </button>
   );
 }
 

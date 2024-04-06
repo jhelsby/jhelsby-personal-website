@@ -15,6 +15,7 @@ const Sidebar = React.forwardRef<HTMLDivElement>((props, ref) => {
         <li><a href="https://github.com/jhels/">My GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/john-h-366980236/">My LinkedIn</a></li>
         <li><a href="/cv">Request my CV</a></li>
+        <li><a href="/blog">Technical Blog</a></li>
         <li><a href="/contact">Contact Me</a></li>
       </ul>
     </div>

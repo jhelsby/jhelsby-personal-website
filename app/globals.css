@@ -17,15 +17,6 @@
   ul > li {
     @apply mb-2;
   }
-  .button {
-    @apply inline-block px-4 py-2 text-white font-bold bg-blue-500 rounded-md transition duration-300 ease-in-out hover:bg-blue-700;
-  }
-  .button-link {
-    @apply bg-orange-400 hover:bg-orange-600;
-  }
-  .button-technical {
-    @apply bg-stone-400 hover:bg-stone-600;
-  }
 }
 
 body, h1, h2, h3, p {
@@ -38,7 +29,7 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #202020;
-  background-color: #cdcdcd;
+  background-color: #dedede;
 }
 
 ul, ol {
@@ -107,15 +98,60 @@ a:visited {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: #68d391;
-  color: #fff;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
+  border: 2px solid black;
 }
 
-.button:hover {
-  background-color: #48bb78;
+.project-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid black;
+  color: white;
+  background-color: #a0a0a0;
+  margin-right: 10px;
 }
+
+.selected-project-button {  
+  background-color: #5180ff;
+}
+
+.project-button-hover:hover {
+  background-color: #aeaeae; /* Change background color to green on hover */
+  /* Add any additional styles for the hover effect */
+}
+
+.button-link {
+  background-color: #00abc2;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: white;
+  padding: 5px 5px;
+  
+}
+
+.button-link:hover {
+  background-color: #fb923c;
+}
+
+.button-technical {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px 5px;
+  color: 'black';
+}
+
+.button-technical:hover {
+  background-color: #56b9b3;
+}
+
 
 /* Footer Styles */
 .footer {
@@ -141,7 +177,18 @@ a:visited {
   display: flex;
   padding: 10px;
 }
-
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  /* background-color: #68d391; */
+  /* color: #fff; */
+  border-radius: 5px;
+  cursor: pointer;
+}
 .photo {
   margin-right: 10px;
   max-width: 100%;
@@ -173,7 +220,7 @@ a:visited {
 
 .sidebar {
   font-size: 1rem;
-  background-color: #f0f0f0;
+  background-color: #c5c5c5;
   padding: 20px;
   position: fixed;
   top: 0;

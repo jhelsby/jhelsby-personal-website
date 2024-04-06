@@ -31,6 +31,7 @@ export default function Home() {
               <li><a href="https://github.com/jhels/">My GitHub</a>.</li>
               <li><a href="https://www.linkedin.com/in/john-h-366980236/">My LinkedIn profile</a>.</li>
               <li><a href="/cv">My CV</a>.</li>
+              <li><a href="/cv">My Technical Blog</a>.</li>
               <li><a href="/contact">Contact Me</a>.</li>
               {/* <li>My blog posts.</li> */}
             </ul> 

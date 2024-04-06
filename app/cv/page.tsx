@@ -3,7 +3,7 @@
 import React from 'react';
 import { Sidebar, SidebarToggle } from '../Sidebar';
 
-export default function Contact() {
+export default function CV() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Handle form submission logic here
