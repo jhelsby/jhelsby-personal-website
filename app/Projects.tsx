@@ -28,7 +28,7 @@ function Projects() {
 
 const ThisWebsite: ProjectFunction = () => {
   return {
-    description: (<p>I built this static website using HTML, CSS, TypeScript, React and Next.js, and deployed it with Vercel. The Request My CV and Contact Me pages are implemented using various AWS services.</p>),
+    description: (<p>I built this static website using HTML, CSS, TypeScript, React and Next.js, and deployed it with Vercel. The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, and the Request My CV page is implemented using various AWS services.</p>),
     technicalDetails: <div>expandable content</div>,
     repo: "https://github.com/jhels/personal-website"
   };
