@@ -4,6 +4,15 @@ import React, { ReactNode, useState } from 'react';
 import Image from 'next/image';
 
 
+// Holds all necessary information for each project.
+type ProjectInfo = {
+  summary: ReactNode;
+  description: ReactNode;
+  technicalDetails?: ReactNode;
+  url?: string; // Use ? because not all projects are deployable.
+  repo: string;
+}
+
 // ###########################
 // #                         #
 // #     PROJECTS TEXT       #
@@ -28,8 +37,8 @@ function Projects() {
 
 const ThisWebsite: ProjectFunction = () => {
   return {
-   
-    description: (<div><p>I built this static website using HTML, CSS, TypeScript, React and Next.js.</p><p>The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, {/* , and the Request My CV page is implemented using various AWS services, */}and I deployed the site with <a href="https://vercel.com/">Vercel</a>. </p></div>),
+    summary: <p>I built this site in HTML, CSS, TypeScript, React and Next.js.</p>,
+    description: (<div><p>The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, {/* , and the Request My CV page is implemented using various AWS services, */}and I deployed the site with <a href="https://vercel.com/">Vercel</a>. </p></div>),
     // technicalDetails: <div>expandable content</div>,
     repo: "https://github.com/jhels/personal-website"
   };
@@ -51,10 +60,9 @@ const TranslationChat: ProjectFunction = () => {
 
 const Conduit: ProjectFunction = () => {
   return  {
+    summary: <p>An LLM interface written in TypeScript, Next.js, Python and Django.</p>,
     description: (
       <div>
-      <p>TypeScript, Next.js, Python and Django.</p>
-
       <p>Conduit is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. Dan built most of the <a href="https://github.com/conduits-link/core">frontend</a>, and I most of the <a href="https://github.com/conduits-link/backend">backend</a>.</p>
     </div>
     ),
@@ -66,7 +74,8 @@ const Conduit: ProjectFunction = () => {
 
 const Deform: ProjectFunction = () => {
   return {
-    description: <div><p>DSP in C++, for Max/MSP.</p>
+    summary: <p>A DSP waveshaper written in C++, for use in Max/MSP.</p>,
+    description: <div>
     <p>The idea of this project was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>.</p>
     <p>See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!</p>
     <video width="640" height="360" controls>
@@ -85,14 +94,6 @@ const Deform: ProjectFunction = () => {
 // #                         #
 // ###########################
 
-// Holds all necessary information for each project.
-type ProjectInfo = {
-  description: ReactNode;
-  technicalDetails?: ReactNode;
-  url?: string; // Use ? because not all projects are deployable.
-  repo: string;
-}
-
 // Factory function for individual projects.
 type ProjectFunction = () => ProjectInfo
 
@@ -105,14 +106,15 @@ interface RenderProjectProps {
 }
 
 function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProjectProps) {
-  const { description, technicalDetails, url, repo } = projectData;
+  const { summary, description, technicalDetails, url, repo } = projectData;
 
   const urlStyle = {
     display: 'flex',
     alignItems: 'center',
     maxWidth: 'fit-content',
     gap: '8px',
-    margin: '10px',
+    margin: '7px',
+    // marginLeft: '7px'
   };
 
   const urlTextStyle = {
@@ -127,6 +129,7 @@ function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProject
 
   return (
     <div>
+      {summary}
       <div style={urlStyle}>
         {<a href={repo} target="_blank" rel="noopener noreferrer" className="button-link" style={urlStyle}>
         <span style={urlTextStyle}>GitHub</span>
