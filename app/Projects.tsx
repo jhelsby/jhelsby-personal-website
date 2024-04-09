@@ -113,7 +113,7 @@ const Deform: ProjectFunction = () => {
     summary: <p>A DSP waveshaper audio effect written in C++, for use in Max/MSP.</p>,
     description: <div>
       <p>
-        This was my first serious programming project. The idea was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on  development and implementation.
+        deform~ was my first serious programming project, completed in the year prior to starting my Computer Science & Mathematics BSc. The idea was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on  development and implementation.
       </p>
       <p>
         See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!
@@ -156,7 +156,7 @@ const Deform: ProjectFunction = () => {
         Many common techniques in sound synthesis come from analogue electronics, for historical reasons. For example, sounds are often built up from a combination of sine, square, saw and triangle waves, which can be synthesised with analogue circuits or with computers with limited resources. I wanted to try and build a DSP audio effect that used the power of modern computers in a way that would be completely impossible in the analogue domain.
       </p>
       <p>
-        I was also interested in trying to use ideas from mathematical analysis, which I had studied at university, to a practical engineering problem. My thinking was that, since mono sound waves can be thought of as a one-dimensional function f(t), we can harness techniques and ideas from one-dimensional real analysis. Here are a few key mathematical ideas that I used:
+        I was also interested in trying to use ideas from mathematical analysis to a practical engineering problem. My thinking was that, since mono sound waves can be thought of as a one-dimensional function f(t), we can harness techniques and ideas from one-dimensional real analysis. Here are a few key mathematical ideas that I used:
       </p>
       <ul>
         <li>I wanted all the transfer functions to be smooth (i.e. differentiable), with the intention that this might prevent the output from being excessively distorted. Splines are smooth on all but a finite number of points, hopefully meaning that the input sound retains its core sonic characteristics.</li>
