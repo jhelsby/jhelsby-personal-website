@@ -78,7 +78,7 @@ const Conduit: ProjectFunction = () => {
           width={960}
           height={600}
         />
-        <p>Now, suppose we want to modify the first paragraph using our LLM assistant. Move your mouse to its left to show the Prompt button, and click it to display the prompt menu:</p>
+        <p>Now, suppose we want to modify the first paragraph using your LLM assistant. Move your mouse to its left to show the Prompt button, and click it to display the prompt menu:</p>
         <Image
           src="/conduit/prompt-menu.webp"
           alt="Conduit Demo Image 1"
@@ -86,7 +86,7 @@ const Conduit: ProjectFunction = () => {
           height={600}
         />
         <p>A number of prompts are displayed. This is simplified for demonstration purposes - in the app, the list is much more extensive, modifiable, and provides a search bar to quickly locate your desired prompt.</p>
-        <p>For this example, suppose you clicked <b>Summarise</b>. This sends a prompt to our LLM, asking for a summary of the selected paragraph. Conduit delivers you the result:</p>
+        <p>For this example, suppose you clicked <b>Summarise</b>. This sends a prompt to your LLM, asking for a summary of the selected paragraph. Conduit delivers you the result:</p>
         <Image
           src="/conduit/prompt-response.webp"
           alt="Conduit Demo Image 2"
