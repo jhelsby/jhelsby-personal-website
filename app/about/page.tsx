@@ -54,26 +54,6 @@ const experiences: Entry[] = [
       </ul>
     </div>,
   },
-  {
-    title: "Work Experience Placement",
-    company: "Airwalk Reply, Sheffield",
-    start: "April 2023",
-    end: "April 2023",
-    tools: "AWS, Docker, Terraform, Jenkins, SQL, DynamoDB, Git, Jira.",
-    description: <div>
-      <p>Placement covered a wide range of essential cloud computing concepts and technologies, including:</p>
-      <ul>
-        <li>AWS, with special focus on EC2 and Lambda.</li>
-        <li>Virtualisation, containerisation and Docker.</li>
-        <li>Git, and various Git branching strategies commonly used in industry.</li>
-        <li>Relational and non-relational databases, including SQL and DynamoDB.</li>
-        <li>CI/CD: the process of automating various stages of app development and deployment.</li>
-        <li>Terraform and Jenkins.</li>
-      </ul>
-      <p>Completed labs on each of the technologies discussed above, completing tickets for each lab in Jira.</p>
-      <p>To conclude the placement, gave a presentation to my team on the above technologies, my completed work, a handover for the outstanding Jira tickets, and a Q&A on the placement experience.</p>
-    </div>,
-  },
 ];
 
 const Section: React.FC<SectionProps> = ({ entries, sectionTitle }) => {
