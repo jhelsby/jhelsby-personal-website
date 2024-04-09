@@ -115,7 +115,10 @@ const Deform: ProjectFunction = () => {
     </p>,
     description: <div>
       <p>
-        [deform~] was my first serious programming project, completed in the year prior to starting my Computer Science & Mathematics BSc. The idea was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on development and implementation.
+        [deform~] was my first serious programming project, completed in the year prior to starting my Computer Science & Mathematics BSc. The idea was to independently design and implement a novel audio effect from scratch.
+      </p>
+      <p>
+        The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on development and implementation.
       </p>
       <p>
         See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!
@@ -169,10 +172,10 @@ const Deform: ProjectFunction = () => {
       </ul>
       <h2>Reflections.</h2>
       <p>
-        I really enjoyed making [deform~], from start to end. As my first serious project, I found it immensely satisfying to see something grow from an idea into a real, useable product. I learned a huge amount in the process, and it was also nice to use things I had learned from mathematics which until that point had only been abstract ideas for me. Building a prototype in a Jupyter notebook before implementing the C++ version was also extremely helpful.
+        I greatly enjoyed making [deform~]. As my first serious project, I found it immensely satisfying to see something grow from an idea into a real, useable product. In hindsight, there&apos;s a number of things I would have done differently, too. The main thing is how unoptimised the code is. It is CPU-intensive, and slow to initialise.
       </p>
       <p>
-        In hindsight, there&apos;s a number of things I would have done differently, too. The main thing is how unoptimised the code is. It is CPU-intensive, and slow to initialise. I think it would benefit from using a C++ linear algebra library. My prototype used NumPy, which was much more efficient as well as leading to simpler code. At the time I tried to use <a href="https://github.com/dpilger26/NumCpp">NumCPP</a>, but couldn&apos;t get it working with the Min-API.
+        I think these issues could be mitigated by using a C++ linear algebra library to generate and manipulate the splines. My prototype used NumPy, which was much more efficient as well as leading to simpler code. At the time I tried to use <a href="https://github.com/dpilger26/NumCpp">NumCPP</a>, but couldn&apos;t get it working with Min-API.
       </p>
       <p>
         I also think that building the project as a Max/MSP external was a mistake as this severely limited the use cases for the product. If I had built it as a VST (Virtual Synth Tool), it could have been used in almost any music program.
