@@ -105,14 +105,76 @@ const Deform: ProjectFunction = () => {
   return {
     summary: <p>A DSP waveshaper audio effect written in C++, for use in Max/MSP.</p>,
     description: <div>
-      <p>The idea of this project was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on the development process.</p>
-      <p>See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!</p>
+      <p>
+        This was my first serious programming project. The idea was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on  development and implementation.
+      </p>
+      <p>
+        See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!
+      </p>
       <video width="640" height="360" controls>
         <source src="/deform_demo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>,
-    details: <div>deform~ is a waveshaper: a distortion  which </div>,
+    details: <div>
+      <p>
+        deform~ is a original, novel waveshaper audio effect. A waveshaper is a distortion audio effect which works by applying any mathematical function (known as the &quot;transfer function&quot;) to the input.
+      </p>
+      <p>deform~ linearly interpolates between a sequence of stochastically generated splines (continuous, piecewise polynomials) as its transfer function. Once the splines have been generated, the user can change a 64-bit <b>Intensity</b> parameter to smoothly distort the input wave, as shown in the video above.
+      </p>
+      <h2>Technical details.</h2>
+      <p>
+        First, the user chooses the maximum degree of the splines, the magnitude of their coefficients, and the number of intermediary splines. A final spline is randomly generated within the constraints set by the user.
+      </p>
+      <p>
+        The intermediary splines are calculated by linearly interpolating between the coefficients of the identity function <i>x</i> (which is itself a polynomial, and therefore a spline) and the final spline. Finally, all the splines are normalised, with the intention that the output volume will be roughly constant as the Intensity parameter is varied.
+      </p>
+      <p>
+        This gives a finite sequence of splines that vary between the identity function and the final spline, from no distortion to most distorted. If the Intensity parameter is set between two splines, the output is given by linearly interpolating between these two splines.
+      </p>
+      <h2>Implementation.</h2>
+      <p>I first built a <a href="https://github.com/jhelsby/deform-/blob/main/source/projects/deform_tilde/prototype.ipynb">prototype</a> in a Python Jupyter Notebook in order to use MatPlotLib&apos;s graph plotting, and used sine, saw, and triangle waves to test the effect in my Jupyter Notebook.
+      </p>
+      <Image
+        src="/deform_jupyter.jpg"
+        alt="Prototype Graphs"
+        width={1193}
+        height={1193}
+      />
+      <p>
+        After the prototype was working properly, I ported my Python code into C++, compiled it using Max/MSP&apos;s <a href="https://github.com/Cycling74/min-devkit/tree/00fbf24c39169280f237c608892e402fcd1f53d9">Min-API</a> and CMake (with the help of a much more experienced friend), and tested the resultant object in Max/MSP.
+      </p>
+      <h2>Motivation.</h2>
+      <p>
+        Many common techniques in sound synthesis come from analogue electronics, for historical reasons. For example, sounds are often built up from a combination of sine, square, saw and triangle waves, which can be synthesised with analogue circuits or with computers with limited resources. I wanted to try and build a DSP audio effect that used the power of modern computers in a way that would be completely impossible in the analogue domain.
+      </p>
+      <p>
+        I was also interested in trying to use ideas from mathematical analysis, which I had studied at university, to a practical engineering problem. My thinking was that, since mono sound waves can be thought of as a one-dimensional function f(t), we can harness techniques and ideas from one-dimensional real analysis. Here are a few key mathematical ideas that I used:
+      </p>
+      <ul>
+        <li>I wanted all the transfer functions to be smooth (i.e. differentiable), with the intention that this might prevent the output from being excessively distorted. Splines are smooth on all but a finite number of points, hopefully meaning that the input sound retains its core sonic characteristics.</li>
+        <li>Splines are easy to differentiate, meaning I could easily limit the rate of change of the splines, avoiding excessive distortion.</li>
+        <li>The Weierstrass approximation theorem implies that a spline can approximate any continuous waveshaper. My idea here is that my effect could generate an extremely wide variety of sounds.</li>
+        <li>If you consider a polynomial f(x) = an xn + … + a1 x + a0 instead as a linear function of its coefficients g(an, …, a0) = xn an + … + x a1 + a0, it is still continuous.</li>
+        <li>Since splines are continuous functions, their linear interpolation is also continuous.</li>
+      </ul>
+      <h2>Reflections.</h2>
+      <p>
+        I really enjoyed making deform~ - as my first serious project, I found it immensely satisfying to see something grow from an idea into a real, useable product. I learned a huge amount in the process, and it was also nice to use things I had learned from mathematics which until that point had only been abstract ideas for me. Building a prototype in a Jupyter notebook before implementing the C++ version was also extremely helpful.
+      </p>
+      <p>
+        In hindsight, there's a number of things I would have done differently, too. The main thing is how unoptimised the code is. It is CPU-intensive, and slow to initialise. I think it would benefit from using a C++ linear algebra library. My prototype used NumPy, which was much more efficient as well as leading to simpler code. At the time I tried to use <a href="https://github.com/dpilger26/NumCpp">NumCPP</a>, but couldn't get it working with the Min-API.
+      </p>
+      <p>
+        I also think that building the project as a Max/MSP external was a mistake as this severely limited the use cases for the product. If I had built it as a VST (Virtual Synth Tool), it could have been used in almost any music program.
+      </p>
+      <p>
+        I'm undecided on whether all the mathematical analysis theory was really needed. It probably wasn't strictly necessary, and could have been built without it. But on the other hand, I found much of it extremely useful, and I took a huge amount of inspiration from ideas in analysis when conceiving of the project.
+      </p>
+      <p>
+        All in all, I found deform~ to be an extremely rewarding first project, both in terms of the finished product and in lessons I took away from building it.
+      </p>
+    </div>,
     repo: "https://github.com/jhels/deform-"
   };
 }
