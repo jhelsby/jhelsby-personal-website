@@ -191,10 +191,10 @@ const Deform: ProjectFunction = () => {
         I also think that building the project as a Max/MSP external was a mistake as this severely limited the use cases for the product. If I had built it as a VST (Virtual Synth Tool), it could have been used in almost any music program.
       </p>
       <p>
-        I&apos;m undecided on whether all the mathematical analysis theory was really needed. It probably wasn&apos;t strictly necessary, and could have been built without it. But on the other hand, I found much of it extremely useful, and I took a huge amount of inspiration from ideas in analysis when conceiving of the project.
+        I&apos;m undecided on whether all the mathematical analysis theory was really needed. It probably wasn&apos;t strictly necessary, and could have been built without it. But on the other hand, I found much of it extremely useful, and I took much inspiration from ideas in analysis when conceiving of the project.
       </p>
       <p>
-        All in all, I found [deform~] to be an extremely rewarding first project, both in terms of the finished product and in lessons I took away from building it.
+        All in all, I found [deform~] to be a highly rewarding first project, in terms of both the finished product and the lessons I took away from building it.
       </p>
     </div>,
     repo: "https://github.com/jhels/deform-"
