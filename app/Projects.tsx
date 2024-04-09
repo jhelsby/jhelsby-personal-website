@@ -113,7 +113,7 @@ const Deform: ProjectFunction = () => {
     summary: <p>A DSP waveshaper audio effect written in C++, for use in Max/MSP.</p>,
     description: <div>
       <p>
-        deform~ was my first serious programming project, completed in the year prior to starting my Computer Science & Mathematics BSc. The idea was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on  development and implementation.
+        deform~ was my first serious programming project, completed in the year prior to starting my Computer Science & Mathematics BSc. The idea was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on development and implementation.
       </p>
       <p>
         See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!
