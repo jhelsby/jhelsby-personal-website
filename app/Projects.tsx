@@ -282,42 +282,42 @@ const ProjectToggles: React.FC<ProjectTogglesProps> = ({ options }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0); // Select first toggle by default.
   const [activeProject, setActiveProject] = useState(ThisWebsite);
 
-  // Tracks whether the Details section is collapsed.
-  const [isExpanded, setIsExpanded] = useState(false);
+  // Tracks whether the Details section is collapsed for each index.
+  const [expandedStates, setExpandedStates] = useState<boolean[]>(options.map(() => false));
 
   const handleProjectToggle = (project: ProjectInfo, index: number) => {
     // Only update if a different button is selected.
     if (index !== activeIndex) {
       setActiveProject(project);
       setActiveIndex(index);
-      setIsExpanded(false);
     }
-  }
+  };
+
+  const toggleExpanded = (index: number) => {
+    // Toggle the expanded state for the given index.
+    const newExpandedStates = [...expandedStates];
+    newExpandedStates[index] = !newExpandedStates[index];
+    setExpandedStates(newExpandedStates);
+  };
 
   return (
     <div>
-      { // Render each button in the array and handle selection.
-        options.map((option, index) => (
-          <ProjectToggle
-            // Set informational fields.
-            label={option.label}
-            project={option.project}
-
-            // Implement toggle logic.
-            key={index}
-            isSelected={index === activeIndex}
-            onClick={() => handleProjectToggle(option.project(), index)}
-          >
-          </ProjectToggle>
-        ))
-      }
+      {options.map((option, index) => (
+        <ProjectToggle
+          label={option.label}
+          project={option.project}
+          key={index}
+          isSelected={index === activeIndex}
+          onClick={() => handleProjectToggle(option.project(), index)}
+        />
+      ))}
       <div>
-        { // Display selected project details.
-          renderProject({ projectData: activeProject, isExpanded, setIsExpanded })
-        }
+        {/* Render the project details with corresponding expand/collapse state */}
+        {renderProject({ projectData: activeProject, isExpanded: expandedStates[activeIndex], setIsExpanded: () => toggleExpanded(activeIndex) })}
       </div>
     </div>
   );
-}
+};
+
 
 export default Projects;
