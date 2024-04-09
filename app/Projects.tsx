@@ -155,7 +155,7 @@ const Deform: ProjectFunction = () => {
       </p>
       <h2>Motivation.</h2>
       <p>
-        Many common techniques in sound synthesis come from analogue electronics, for historical reasons. For example, sounds are often built up from a combination of sine, square, saw and triangle waves, which can be synthesised with analogue circuits or with computers with limited resources. I wanted to try and build a DSP audio effect that used the power of modern computers in a way that would be completely impossible in the analogue domain.
+        For historical reasons, many common techniques in sound synthesis come from analogue electronics. For example, sounds are often built up from a combination of basic waveforms and effects which can be synthesised with analogue circuits or with computers with limited resources. I wanted to try and build a DSP audio effect that used the power of modern computers in a way that would be impossible in the analogue domain.
       </p>
       <p>
         I was also interested in trying to use ideas from mathematical analysis to a practical engineering problem. My thinking was that, since mono sound waves can be thought of as a one-dimensional function f(t), we can harness techniques and ideas from one-dimensional real analysis. Here are a few key mathematical ideas that I used:
