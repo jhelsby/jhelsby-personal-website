@@ -52,7 +52,7 @@ const GlobalTxt: ProjectFunction = () => {
 
         <p>GlobalTxt is built and deployed using a number of AWS services, and integrated into this website.</p>
       </div>),
-    details: <div>expandable content</div>,
+    details: <div>TBC</div>,
     url: "http://localhost:3000/",
     repo: "https://github.com/jhels/TranslationChat"
   };
@@ -103,16 +103,16 @@ const Conduit: ProjectFunction = () => {
 
 const Deform: ProjectFunction = () => {
   return {
-    summary: <p>A DSP waveshaper written in C++, for use in Max/MSP.</p>,
+    summary: <p>A DSP waveshaper audio effect written in C++, for use in Max/MSP.</p>,
     description: <div>
-      <p>The idea of this project was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>.</p>
+      <p>The idea of this project was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on the development process.</p>
       <p>See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!</p>
       <video width="640" height="360" controls>
         <source src="/deform_demo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>,
-    details: <div>expandable content</div>,
+    details: <div>deform~ is a waveshaper: a distortion  which </div>,
     repo: "https://github.com/jhels/deform-"
   };
 }

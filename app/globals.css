@@ -29,7 +29,8 @@ body,
 h1,
 h2,
 h3,
-p {
+p,
+video {
   margin: 0 auto;
   padding: 10px;
   max-width: 80ch;
