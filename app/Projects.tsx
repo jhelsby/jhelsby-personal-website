@@ -161,7 +161,7 @@ const Deform: ProjectFunction = () => {
         I was also interested in trying to use ideas from mathematical analysis to a practical engineering problem. My thinking was that, since mono sound waves can be thought of as a one-dimensional function f(t), we can harness techniques and ideas from one-dimensional real analysis. Here are a few key mathematical ideas that I used:
       </p>
       <ul>
-        <li>I wanted all the transfer functions to be smooth (i.e. differentiable), with the intention that this might prevent the output from being excessively distorted. Splines are smooth on all but a finite number of points, hopefully meaning that the input sound retains its core sonic characteristics.</li>
+        <li>I wanted all the transfer functions to be smooth (i.e. differentiable), with the intention that this might prevent the output from being excessively distorted. Splines are smooth on all but a finite number of points.</li>
         <li>Splines are easy to differentiate, meaning I could easily limit the rate of change of the splines, avoiding excessive distortion.</li>
         <li>The Weierstrass approximation theorem implies that a spline can approximate any continuous waveshaper. My idea here is that my effect could generate an extremely wide variety of sounds.</li>
         <li>If you consider a polynomial f(x) = an xn + … + a1 x + a0 instead as a linear function of its coefficients g(an, …, a0) = xn an + … + x a1 + a0, it is still continuous.</li>
