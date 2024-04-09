@@ -3,12 +3,11 @@
 import React, { ReactNode, useState } from 'react';
 import Image from 'next/image';
 
-
 // Holds all necessary information for each project.
 type ProjectInfo = {
   summary: ReactNode;
   description: ReactNode;
-  technicalDetails?: ReactNode;
+  details?: ReactNode;
   url?: string; // Use ? because not all projects are deployable.
   repo: string;
 }
@@ -23,9 +22,9 @@ type ProjectInfo = {
 function Projects() {
   const buttonOptions = [
     { label: 'This website', project: ThisWebsite },
-    { label: "Conduit", project: Conduit},
+    { label: "Conduit", project: Conduit },
     // { label: 'TranslationChat', project: TranslationChat},
-    { label: "deform~", project: Deform}
+    { label: "deform~", project: Deform }
   ];
 
   return (
@@ -37,9 +36,9 @@ function Projects() {
 
 const ThisWebsite: ProjectFunction = () => {
   return {
-    summary: <p>I built this site in HTML, CSS, TypeScript, React and Next.js.</p>,
+    summary: <p>I built this site with HTML, CSS, TypeScript, React and Next.js.</p>,
     description: (<div><p>The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, {/* , and the Request My CV page is implemented using various AWS services, */}and I deployed the site with <a href="https://vercel.com/">Vercel</a>. </p></div>),
-    // technicalDetails: <div>expandable content</div>,
+    // details: <div>expandable content</div>,
     repo: "https://github.com/jhels/personal-website"
   };
 }
@@ -49,25 +48,53 @@ const GlobalTxt: ProjectFunction = () => {
     summary: <p>A translator chat application built with Python and AWS.</p>,
     description: (
       <div>
-      <p>GlobalTxt is a real-time text messaging application which translates all messages into the user&apos;s preferred written language. It allows users from all over the world to bypass language barriers and easily communicate with each other via a simple and intuitive UI.</p>
+        <p>GlobalTxt is a real-time text messaging application which translates all messages into the user&apos;s preferred written language. It allows users from all over the world to bypass language barriers and easily communicate with each other via a simple and intuitive UI.</p>
 
-      <p>GlobalTxt is built and deployed using a number of AWS services, and integrated into this website.</p>
+        <p>GlobalTxt is built and deployed using a number of AWS services, and integrated into this website.</p>
       </div>),
-    technicalDetails: <div>expandable content</div>,
+    details: <div>expandable content</div>,
     url: "http://localhost:3000/",
     repo: "https://github.com/jhels/TranslationChat"
   };
 }
 
 const Conduit: ProjectFunction = () => {
-  return  {
-    summary: <p>An LLM interface written in TypeScript, Next.js, Python and Django.</p>,
+  return {
+    summary: <p>An LLM-based text editor written in TypeScript, Next.js, Python and Django.</p>,
     description: (
       <div>
-      <p>Conduit is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. Dan built most of the <a href="https://github.com/conduits-link/core">frontend</a>, and I most of the <a href="https://github.com/conduits-link/backend">backend</a>.</p>
-    </div>
+        <p>Conduit is an LLM-based text editor with an intuitive graphical interface. It allows you to employ ChatGPT, Claude, Gemini and other LLMs as AI writing assistants, without having to type in any prompts. Please expand the details tab below for some demo images, and a brief scenario walkthrough. A demo video is coming soon!</p>
+        <p>Conduit is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. Dan built most of the <a href="https://github.com/conduits-link/core">frontend</a>, which is written in TypeScript and Next.js. I wrote most of the <a href="https://github.com/conduits-link/backend">backend</a>, which uses Python and Django.</p>
+      </div>
     ),
-    technicalDetails: <div>expandable content</div>,
+    details: (
+      <div>
+        <h2>Demo Images</h2>
+        <p>Conduit is a clean, intuitive, online text editor. Here's a Conduit document discussing quantum entanglement:</p>
+        <Image
+          src="/conduit/edit.webp"
+          alt="Conduit Demo Image 1"
+          width={960}
+          height={600}
+        />
+        <p>Now, suppose we want to modify the first paragraph using our LLM assistant (in our demo case, we are using ChatGPT). Move our mouse to its left to show the Prompt button, and click it to display the prompt menu:</p>
+        <Image
+          src="/conduit/prompt-menu.webp"
+          alt="Conduit Demo Image 1"
+          width={960}
+          height={600}
+        />
+        <p>A number of prompts are displayed. This is simplified for demonstration purposes - in the app, the list is much more extensive, modifiable, and provides a search bar to quickly locate your desired prompt.</p>
+        <p>In this example, we decide to summarise the first paragraph. This sends a prompt to our LLM, copying the selected paragraph and asking for a summary. Conduit delivers you the result:</p>
+        <Image
+          src="/conduit/prompt-response.webp"
+          alt="Conduit Demo Image 2"
+          width={960}
+          height={600}
+        />
+        <p>From here, you can select one of the result buttons to regenerate the output (if you don't like the response), replace the first paragraph with the new one, add it as a new paragraph, combine the two paragraphs, or delete the output.</p>
+      </div>
+    ),
     url: "https://www.conduits.link/",
     repo: "https://github.com/conduits-link/"
   };
@@ -77,14 +104,14 @@ const Deform: ProjectFunction = () => {
   return {
     summary: <p>A DSP waveshaper written in C++, for use in Max/MSP.</p>,
     description: <div>
-    <p>The idea of this project was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>.</p>
-    <p>See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!</p>
-    <video width="640" height="360" controls>
-      <source src="/deform_demo.mp4" type="video/mp4"/>
-      Your browser does not support the video tag.
+      <p>The idea of this project was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>.</p>
+      <p>See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!</p>
+      <video width="640" height="360" controls>
+        <source src="/deform_demo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
     </div>,
-    technicalDetails: <div>expandable content</div>,
+    details: <div>expandable content</div>,
     repo: "https://github.com/jhels/deform-"
   };
 }
@@ -99,7 +126,7 @@ const Deform: ProjectFunction = () => {
 type ProjectFunction = () => ProjectInfo
 
 // Stores project data, alongside whether the  
-// technicalDetails section is expanded.
+// details section is expanded.
 interface RenderProjectProps {
   projectData: ProjectInfo;
   isExpanded: boolean;
@@ -107,7 +134,7 @@ interface RenderProjectProps {
 }
 
 function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProjectProps) {
-  const { summary, description, technicalDetails, url, repo } = projectData;
+  const { summary, description, details, url, repo } = projectData;
 
   const urlStyle = {
     display: 'flex',
@@ -133,25 +160,25 @@ function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProject
       {summary}
       <div style={urlStyle}>
         {<a href={repo} target="_blank" rel="noopener noreferrer" className="button-link" style={urlStyle}>
-        <span style={urlTextStyle}>GitHub</span>
-        <Image
-          src="/github-mark.svg"
-          alt="GitHub Logo"
-          width={20}
-          height={20}
-        />
+          <span style={urlTextStyle}>GitHub</span>
+          <Image
+            src="/github-mark.svg"
+            alt="GitHub Logo"
+            width={20}
+            height={20}
+          />
         </a>}
-        {url && <a href={url} target="_blank" rel="noopener noreferrer" className="button-link">App Website</a>} 
+        {url && <a href={url} target="_blank" rel="noopener noreferrer" className="button-link">App Website</a>}
       </div>
       {description}
-      {technicalDetails !== undefined && (
+      {details !== undefined && (
         <p>
-          <button onClick={() => setIsExpanded(!isExpanded)} className="button-technical">
-            {isExpanded ? "Hide Details ▽" : "Show Technical Details ▷"}
+          <button onClick={() => setIsExpanded(!isExpanded)} className="button-details">
+            {isExpanded ? "Hide Details ▽" : "Show Details ▷"}
           </button>
           {isExpanded && (
             <div style={detailsContainerStyle}>
-              {technicalDetails}
+              {details}
             </div>
           )}
         </p>
@@ -185,19 +212,19 @@ const ProjectToggle: React.FC<ProjectToggleProps> = ({ label, isSelected, onClic
 // Defines an array of toggles, with labels and associated projects,
 // such that only the selected project button is highlighted.
 interface ProjectTogglesProps {
-  options: {label: string; project: ProjectFunction;}[];
+  options: { label: string; project: ProjectFunction; }[];
 }
 
 const ProjectToggles: React.FC<ProjectTogglesProps> = ({ options }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0); // Select first toggle by default.
   const [activeProject, setActiveProject] = useState(ThisWebsite);
 
-  // Tracks whether the Technical Details section is collapsed.
+  // Tracks whether the Details section is collapsed.
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleProjectToggle = (project: ProjectInfo, index: number) => {
     // Only update if a different button is selected.
-    if (index!==activeIndex) {
+    if (index !== activeIndex) {
       setActiveProject(project);
       setActiveIndex(index);
       setIsExpanded(false);
@@ -207,7 +234,7 @@ const ProjectToggles: React.FC<ProjectTogglesProps> = ({ options }) => {
   return (
     <div>
       { // Render each button in the array and handle selection.
-        options.map((option, index) => ( 
+        options.map((option, index) => (
           <ProjectToggle
             // Set informational fields.
             label={option.label}

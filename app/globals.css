@@ -6,23 +6,30 @@
   h1 {
     @apply text-4xl;
   }
+
   h2 {
     @apply text-3xl;
   }
+
   ul {
     @apply list-disc pl-4;
   }
-  
-  ul > li {
+
+  ul>li {
     @apply mb-2;
   }
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: bold;
 }
 
-body, h1, h2, h3, p {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0 auto;
   padding: 10px;
   max-width: 80ch;
@@ -36,7 +43,8 @@ body {
   min-height: 100vh;
 }
 
-ul, ol {
+ul,
+ol {
   padding: 0px;
 }
 
@@ -126,16 +134,17 @@ a:visited {
   background-color: #a0a0a0;
   margin-right: 10px;
   margin-top: 20px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   margin-left: 10px
 }
 
-.selected-project-button {  
+.selected-project-button {
   background-color: #5180ff;
 }
 
 .project-button-hover:hover {
-  background-color: #aeaeae; /* Change background color to green on hover */
+  background-color: #aeaeae;
+  /* Change background color to green on hover */
   /* Add any additional styles for the hover effect */
 }
 
@@ -151,7 +160,7 @@ a:visited {
   background-color: #fb923c;
 }
 
-.button-technical {
+.button-details {
   background-color: #ffffff;
   border: 1px solid black;
   border-radius: 2px;
@@ -159,7 +168,7 @@ a:visited {
   color: 'black';
 }
 
-.button-technical:hover {
+.button-details:hover {
   background-color: #56b9b3;
 }
 
@@ -188,6 +197,7 @@ a:visited {
   display: flex;
   padding: 10px;
 }
+
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -198,6 +208,7 @@ a:visited {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .photo {
   margin-top: 15px;
   margin-right: 10px;
@@ -213,6 +224,7 @@ a:visited {
     display: flex;
     padding: 0px;
   }
+
   .photo {
     display: none;
   }
@@ -234,49 +246,64 @@ a:visited {
   padding: 20px;
   position: fixed;
   top: 0;
-  bottom: 0; /* Extend sidebar to the bottom of the page */
+  bottom: 0;
+  /* Extend sidebar to the bottom of the page */
   left: 0;
-  width: 155px; /* Set a fixed width */
+  width: 155px;
+  /* Set a fixed width */
   display: flex;
-  flex-direction: column; /* Arrange contents vertically */
-  justify-content: center; /* Center items vertically */
+  flex-direction: column;
+  /* Arrange contents vertically */
+  justify-content: center;
+  /* Center items vertically */
 }
 
 /* Center text horizontally and vertically */
 .sidebar ul {
-  list-style-type: none; /* Remove default list styles */
+  list-style-type: none;
+  /* Remove default list styles */
   padding: 0;
   margin: 0;
-  position: absolute; /* Position the list absolutely */
-  top: 50%; /* Position the top of the list 50% from the top */
-  transform: translateY(-50%); /* Center the list vertically */
+  position: absolute;
+  /* Position the list absolutely */
+  top: 50%;
+  /* Position the top of the list 50% from the top */
+  transform: translateY(-50%);
+  /* Center the list vertically */
 }
 
 .sidebar li {
-  margin: 10px 0; /* Add vertical spacing between list items */
+  margin: 10px 0;
+  /* Add vertical spacing between list items */
 }
 
 /* Adjust the top position of the list based on its height */
 .sidebar ul {
-  top: calc(50% - (1.5em ) / 2); /* Adjust the value as per the number of list items */
+  top: calc(50% - (1.5em) / 2);
+  /* Adjust the value as per the number of list items */
 }
 
 
 
 .sidebar a {
-  text-decoration: none; /* Remove default underline */
-  color: inherit; /* Inherit color from parent */
+  text-decoration: none;
+  /* Remove default underline */
+  color: inherit;
+  /* Inherit color from parent */
 }
 
 .sidebar a:hover {
-  text-decoration: underline; /* Underline link on hover */
+  text-decoration: underline;
+  /* Underline link on hover */
 }
 
 #page-wrap {
-  flex-grow: 1; /* Take up remaining space */
+  flex-grow: 1;
+  /* Take up remaining space */
   padding: 20px;
 
-  width: calc(100%); /* Subtract sidebar width */
+  width: calc(100%);
+  /* Subtract sidebar width */
 }
 
 /* Make sidebar disappear
@@ -292,22 +319,27 @@ a:visited {
   }
 
   .sidebar-toggle {
-    display: block; /* Or any other desired display value */
+    display: block;
+    /* Or any other desired display value */
   }
 }
 
 @media (min-width: 1151px) {
   .sidebar {
-    display: block; /* Or any other desired display value */
+    display: block;
+    /* Or any other desired display value */
   }
+
   .sidebar-toggle {
     display: none;
   }
 }
 
 .toggle-content {
-  display: flex; /* Use flexbox to align items horizontally */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  /* Use flexbox to align items horizontally */
+  align-items: center;
+  /* Center items vertically */
 }
 
 .links-list {
@@ -316,25 +348,33 @@ a:visited {
 }
 
 .link-item {
-  font-size: 0.8rem; /* Adjust the font size */
-  display: inline-block; /* Display list items horizontally */
-  margin: 15px; /* Add spacing between items */
+  font-size: 0.8rem;
+  /* Adjust the font size */
+  display: inline-block;
+  /* Display list items horizontally */
+  margin: 15px;
+  /* Add spacing between items */
 }
 
 .link-item a {
-  text-decoration: none; /* Remove default underline */
-  color: #333; /* Set link color */
+  text-decoration: none;
+  /* Remove default underline */
+  color: #333;
+  /* Set link color */
 }
 
 .link-item a:hover {
-  text-decoration: underline; /* Underline link on hover */
-  color: #666; /* Change link color on hover */
+  text-decoration: underline;
+  /* Underline link on hover */
+  color: #666;
+  /* Change link color on hover */
 }
 
 /* Contact Form  */
 
 form {
-  max-width: 400px; /* Adjust the width of the form */
+  max-width: 400px;
+  /* Adjust the width of the form */
   padding: 10px;
 }
 

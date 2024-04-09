@@ -33,12 +33,11 @@ export default function Home() {
               <li><a href="/cv">My CV</a>.</li>
               <li><a href="/cv">My Technical Blog</a>.</li>
               <li><a href="/contact">Contact Me</a>.</li>
-              {/* <li>My blog posts.</li> */}
-            </ul> 
+            </ul>
           </div>
 
           <p>Finally, a few of my coding projects can be found below. Please select a project to read more, view the codebase, or see the application in action.</p>
-          
+
           <p> Thank you for reading - and please don&apos;t hesitate to <a href="/contact">get in touch</a> or <a href="https://www.linkedin.com/in/john-h-366980236/" >connect on LinkedIn</a> if you have any comments or questions. Have a great rest of your day!</p>
 
           <p>- John. 😊</p>
