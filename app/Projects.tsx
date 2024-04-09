@@ -164,7 +164,8 @@ const Deform: ProjectFunction = () => {
         <li>I wanted all the transfer functions to be continuous, or better yet, differentiable, with the intention that this might prevent the output from being excessively distorted. Splines are differentiable on all but a finite number of points.</li>
         <li>Splines are easy to differentiate, meaning I could easily limit the rate of change of the splines, avoiding excessive distortion.</li>
         <li>The Weierstrass approximation theorem implies that a spline can approximate any continuous waveshaper, which I hoped would mean that my effect could generate an extremely wide variety of sounds.</li>
-        <li>If you consider a polynomial f(x) = an xn + … + a1 x + a0 instead as a linear function of its coefficients g(an, …, a0) = xn an + … + x a1 + a0, it is continuous in those coefficients. And since splines are continuous functions, their linear interpolation is also continuous. I hoped that this meant that varying the Intensity parameter would result in a pleasant, smooth transformation of the output audio.</li>
+        <li>If you consider a polynomial f(x) = an xn + … + a1 x + a0 instead as a linear function of its coefficients g(a0, …, an) = xn an + … + x a1 + a0, it is also continuous in a0, ..., an. I hoped that this meant my intermediary splines would evolve smoothly from no distortion to the final spline.</li>
+        <li>Since splines are continuous functions, linear interpolation of two splines is also continuous. I hoped that this meant that varying the Intensity parameter would result in a pleasant, smooth transformation of the output audio.</li>
       </ul>
       <h2>Reflections.</h2>
       <p>
