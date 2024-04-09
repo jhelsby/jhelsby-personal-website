@@ -110,7 +110,9 @@ const Conduit: ProjectFunction = () => {
 
 const Deform: ProjectFunction = () => {
   return {
-    summary: <p>A DSP waveshaper audio effect written in C++, for use in Max/MSP.</p>,
+    summary: <p>
+      A DSP waveshaper audio effect written in C++, for use in <a href="https://cycling74.com/products/max">Max/ MSP</a>.
+    </p>,
     description: <div>
       <p>
         deform~ was my first serious programming project, completed in the year prior to starting my Computer Science & Mathematics BSc. The idea was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on development and implementation.
@@ -127,7 +129,7 @@ const Deform: ProjectFunction = () => {
       <p>
         deform~ is a original, novel waveshaper audio effect. A waveshaper is a distortion audio effect which works by applying any mathematical function (known as the &quot;transfer function&quot;) to the input.
       </p>
-      <p>deform~ linearly interpolates between a sequence of stochastically generated splines (continuous, piecewise polynomials) as its transfer function. Once the splines have been generated, the user can change a 64-bit <b>Intensity</b> parameter to smoothly distort the input wave, as shown in the video above.
+      <p>deform~ uses a sequence of stochastically generated splines (continuous, piecewise polynomials) as its transfer functions. Once the splines have been generated, the user can change a 64-bit <b>Intensity</b> parameter to smoothly distort the input wave, as shown in the video above.
       </p>
       <h2>Technical details.</h2>
       <p>
