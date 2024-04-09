@@ -136,7 +136,7 @@ const Deform: ProjectFunction = () => {
         First, the user chooses the maximum degree of the splines, the magnitude of their coefficients, and the number of intermediary splines. A final spline is randomly generated within the constraints set by the user.
       </p>
       <p>
-        The intermediary splines are calculated by linearly interpolating between the coefficients of the identity function <i>x</i> (which is itself a polynomial, and therefore a spline) and the final spline. Finally, all the splines are normalised, with the intention that the output volume will be roughly constant as the Intensity parameter is varied.
+        The intermediary splines are calculated by linearly interpolating between the coefficients of the identity function <i>x</i> and the final spline. Finally, all the splines are normalised, with the intention that the output volume will be roughly constant as the Intensity parameter is varied.
       </p>
       <p>
         This gives a finite sequence of splines that vary between the identity function and the final spline, from no distortion to most distorted. If the Intensity parameter is set between two splines, the output is given by linearly interpolating between these two splines.
@@ -151,7 +151,7 @@ const Deform: ProjectFunction = () => {
         height={1193}
       />
       <p>
-        After the prototype was working properly, I ported my Python code into C++, compiled it using Max/MSP&apos;s <a href="https://github.com/Cycling74/min-devkit/tree/00fbf24c39169280f237c608892e402fcd1f53d9">Min-API</a> and CMake (with the help of a much more experienced friend), and tested the resultant object in Max/MSP.
+        After the prototype was working properly, I ported my Python code <a href="https://github.com/jhelsby/deform-/blob/main/source/projects/deform_tilde/deform_tilde.cpp">into C++</a> (inefficiently, as discussed below), compiled it using Max/MSP&apos;s <a href="https://github.com/Cycling74/min-devkit/tree/00fbf24c39169280f237c608892e402fcd1f53d9">Min-API</a> and CMake (with the help of a much more experienced friend), and tested the resultant object in Max/MSP.
       </p>
       <h2>Motivation.</h2>
       <p>
