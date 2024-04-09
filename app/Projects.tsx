@@ -86,7 +86,7 @@ const Conduit: ProjectFunction = () => {
           height={600}
         />
         <p>A number of prompts are displayed. This is simplified for demonstration purposes - in the app, the list is much more extensive, modifiable, and provides a search bar to quickly locate your desired prompt.</p>
-        <p>In this example, we clicked "Summarise". This sends a prompt to our LLM, asking for a summary of the selected paragraph. Conduit delivers you the result:</p>
+        <p>In this example, we clicked <b>Summarise</b>. This sends a prompt to our LLM, asking for a summary of the selected paragraph. Conduit delivers you the result:</p>
         <Image
           src="/conduit/prompt-response.webp"
           alt="Conduit Demo Image 2"
@@ -107,12 +107,10 @@ const Deform: ProjectFunction = () => {
     description: <div>
       <p>The idea of this project was to independently design and implement a novel audio effect from scratch. The challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on the development process.</p>
       <p>See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!</p>
-      <p>
-        <video width="640" height="360" controls>
-          <source src="/deform_demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </p>
+      <video width="640" height="360" controls>
+        <source src="/deform_demo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>,
     details: <div>deform~ is a waveshaper: a distortion  which </div>,
     repo: "https://github.com/jhels/deform-"
