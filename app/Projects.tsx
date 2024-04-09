@@ -169,7 +169,7 @@ const Deform: ProjectFunction = () => {
       </ul>
       <h2>Reflections.</h2>
       <p>
-        I really enjoyed making [deform~] - as my first serious project, I found it immensely satisfying to see something grow from an idea into a real, useable product. I learned a huge amount in the process, and it was also nice to use things I had learned from mathematics which until that point had only been abstract ideas for me. Building a prototype in a Jupyter notebook before implementing the C++ version was also extremely helpful.
+        I really enjoyed making [deform~] &ndash; as my first serious project, I found it immensely satisfying to see something grow from an idea into a real, useable product. I learned a huge amount in the process, and it was also nice to use things I had learned from mathematics which until that point had only been abstract ideas for me. Building a prototype in a Jupyter notebook before implementing the C++ version was also extremely helpful.
       </p>
       <p>
         In hindsight, there&apos;s a number of things I would have done differently, too. The main thing is how unoptimised the code is. It is CPU-intensive, and slow to initialise. I think it would benefit from using a C++ linear algebra library. My prototype used NumPy, which was much more efficient as well as leading to simpler code. At the time I tried to use <a href="https://github.com/dpilger26/NumCpp">NumCPP</a>, but couldn&apos;t get it working with the Min-API.
