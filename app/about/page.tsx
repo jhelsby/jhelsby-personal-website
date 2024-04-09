@@ -42,7 +42,7 @@ const experiences: Entry[] = [
     tools: "Wolfram Language, C++, Git, Mathematica.",
     description: <div>
       <p>
-        In the summer of my first year at Bath, I worked on Mathematica’s LLVM-based Wolfram Compiler, under the supervision of Dr Tom Wickham-Jones, Directory of Kernel Technology at Wolfram Research.
+        In the summer of my first year at Bath, I worked on Mathematica’s LLVM-based Wolfram Compiler under the supervision of Dr Tom Wickham-Jones, Directory of Kernel Technology at Wolfram Research.
       </p>
       <ul>
         <li>Implemented an optimised CompiledPolynomial data structure, algorithms and automated tests. Addition/multiplication algorithms ran 9.5x/3.5x faster than interpreted equivalents respectively.</li>

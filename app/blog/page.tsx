@@ -11,7 +11,7 @@ interface BlogPost {
 }
 
 const blogPosts: BlogPost[] = [
-  { slug: 'second-post', title: 'Second Blog Post', date: '2024-04-05' },
+  { slug: 'libraries', title: 'On Libraries and Dependencies', date: '2024-04-05' },
   { slug: 'first-post', title: 'First Post - Introduction and Motivation', date: '2024-04-06' },
 ];
 
