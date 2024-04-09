@@ -151,7 +151,7 @@ const Deform: ProjectFunction = () => {
         height={1193}
       />
       <p>
-        After the prototype was working properly, I ported my Python code <a href="https://github.com/jhelsby/deform-/blob/main/source/projects/deform_tilde/deform_tilde.cpp">into C++</a>, compiled it using Max/MSP&apos;s <a href="https://github.com/Cycling74/min-devkit/tree/00fbf24c39169280f237c608892e402fcd1f53d9">Min-API</a> and CMake (with the help of a much more experienced friend), and tested the resultant object in Max/MSP.
+        After the prototype was working properly, I ported my Python code <a href="https://github.com/jhelsby/deform-/blob/main/source/projects/deform_tilde/deform_tilde.cpp">into C++</a>, compiled it using Max/MSP&apos;s <a href="https://github.com/Cycling74/min-devkit/tree/00fbf24c39169280f237c608892e402fcd1f53d9">Min-API</a> and CMake (with the help of a much more experienced friend), and tested the resultant external object in Max/MSP.
       </p>
       <h2>Motivation.</h2>
       <p>
