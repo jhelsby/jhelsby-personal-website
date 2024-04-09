@@ -78,7 +78,7 @@ const Conduit: ProjectFunction = () => {
           width={960}
           height={600}
         />
-        <p>Now, suppose we want to modify the first paragraph using our LLM assistant (in our demo case, we are using ChatGPT). Move our mouse to its left to show the Prompt button, and click it to display the prompt menu:</p>
+        <p>Now, suppose we want to modify the first paragraph using our LLM assistant. Move your mouse to its left to show the Prompt button, and click it to display the prompt menu:</p>
         <Image
           src="/conduit/prompt-menu.webp"
           alt="Conduit Demo Image 1"
@@ -86,14 +86,21 @@ const Conduit: ProjectFunction = () => {
           height={600}
         />
         <p>A number of prompts are displayed. This is simplified for demonstration purposes - in the app, the list is much more extensive, modifiable, and provides a search bar to quickly locate your desired prompt.</p>
-        <p>In this example, we clicked <b>Summarise</b>. This sends a prompt to our LLM, asking for a summary of the selected paragraph. Conduit delivers you the result:</p>
+        <p>For this example, suppose you clicked <b>Summarise</b>. This sends a prompt to our LLM, asking for a summary of the selected paragraph. Conduit delivers you the result:</p>
         <Image
           src="/conduit/prompt-response.webp"
           alt="Conduit Demo Image 2"
           width={960}
           height={600}
         />
-        <p>From here, you can select one of the result buttons to regenerate the output (if you don&apos;t like the response), replace the first paragraph with the new one, add it as a new paragraph, combine the two paragraphs, or delete the output.</p>
+        <p>From here, you can select one of the result buttons to:</p>
+        <ul>
+          <li>regenerate the output (if you don&apos;t like the response).</li>
+          <li>replace the first paragraph with the output.</li>
+          <li>convert the output into a new paragraph.</li>
+          <li>combine the paragraph with the output, to form a single paragraph.</li>
+          <li>delete the output.</li>
+        </ul>
       </div>
     ),
     url: "https://www.conduits.link/",
