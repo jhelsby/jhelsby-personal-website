@@ -111,11 +111,11 @@ const Conduit: ProjectFunction = () => {
 const Deform: ProjectFunction = () => {
   return {
     summary: <p>
-      A DSP waveshaper audio effect written in C++, for use in <a href="https://cycling74.com/products/max">Max/ MSP</a>.
+      A real-time DSP waveshaper audio effect written in C++, for use in <a href="https://cycling74.com/products/max">Max/ MSP</a>.
     </p>,
     description: <div>
       <p>
-        [deform~] was my first serious programming project, completed in the year prior to starting my Computer Science & Mathematics BSc. The idea was to independently design and implement a novel audio effect from scratch.
+        [deform~] was my first serious programming project, completed in the year prior to starting my Computer Science & Mathematics BSc. The idea was to independently design and implement a novel real-time audio effect from scratch.
       </p>
       <p>
         An additional challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on development and implementation.
@@ -164,18 +164,28 @@ const Deform: ProjectFunction = () => {
         I was also interested in trying to use ideas from mathematical analysis to a practical engineering problem. My thinking was that, since mono sound waves can be thought of as a one-dimensional function f(t), we can harness techniques and ideas from one-dimensional real analysis. Here are a few key mathematical ideas that I used:
       </p>
       <ul>
-        <li>I wanted all the transfer functions to be continuous, or better yet, differentiable, with the intention that this might prevent the output from being excessively distorted. Splines are differentiable on all but a finite number of points.</li>
-        <li>Splines are easy to differentiate, meaning I could easily limit the rate of change of the splines, avoiding excessive distortion.</li>
-        <li>The Weierstrass approximation theorem implies that a spline can approximate any continuous waveshaper, which I hoped would mean that my effect could generate an extremely wide variety of sounds.</li>
-        <li>If you consider a polynomial f(x) = an x^n + … + a1 x + a0 instead as a linear function of its coefficients g(a0, …, an) = x^n an + … + x a1 + a0, it is also continuous in a0, ..., an. I hoped that this meant my intermediary splines would evolve smoothly from no distortion to the final spline.</li>
-        <li>Since splines are continuous functions, linear interpolation of two splines is also continuous. I hoped that this meant that varying the Intensity parameter would result in a pleasant, smooth transformation of the output audio.</li>
+        <li>
+          I wanted all the transfer functions to be continuous, or better yet, differentiable, with the intention that this might prevent the output from being excessively distorted. Splines are differentiable on all but a finite number of points.
+        </li>
+        <li>
+          Splines are easy to differentiate, meaning I could easily limit the rate of change of the splines, avoiding excessive distortion.
+        </li>
+        <li>
+          The Weierstrass approximation theorem implies that a spline can approximate any continuous waveshaper, which I hoped would mean that my effect could generate an extremely wide variety of sounds.
+        </li>
+        <li>
+          If you consider a polynomial f(x) = an x^n + … + a1 x + a0 instead as a linear function of its coefficients g(a0, …, an) = x^n an + … + x a1 + a0, it is also continuous in a0, ..., an. I hoped that this meant my intermediary splines would evolve smoothly from no distortion to the final spline.
+        </li>
+        <li>
+          Since splines are continuous functions, linear interpolation of two splines is also continuous. I hoped that this meant that varying the Intensity parameter would result in a pleasant, smooth transformation of the output audio.
+        </li>
       </ul>
       <h2>Reflections.</h2>
       <p>
-        I greatly enjoyed making [deform~]. As my first serious project, I found it immensely satisfying to see something grow from an idea into a real, useable product. In hindsight, there&apos;s a number of things I would have done differently, too. The main thing is how unoptimised the code is. It is CPU-intensive, and slow to initialise.
+        I greatly enjoyed making [deform~]. As my first serious project, I found it immensely satisfying to see something grow from an idea into a real, useable product. In hindsight, though, there&apos;s a number of things I would have done differently. The main thing is how unoptimised the code is. It is very CPU-intensive and slow to initialise.
       </p>
       <p>
-        I think these issues could be mitigated by using a C++ linear algebra library to generate and manipulate the splines. My prototype used NumPy, which was much more efficient as well as leading to simpler code. At the time I tried to use <a href="https://github.com/dpilger26/NumCpp">NumCPP</a>, but couldn&apos;t get it working with Min-API.
+        I think these issues could be mitigated by using a C++ linear algebra library to generate and manipulate the splines using matrix operations. My prototype used NumPy for this purpose, which was much more efficient (and concise). When porting to C++, I tried to convert the NumPy implementation into <a href="https://github.com/dpilger26/NumCpp">NumCPP</a>, but couldn&apos;t get it working with Min-API.
       </p>
       <p>
         I also think that building the project as a Max/MSP external was a mistake as this severely limited the use cases for the product. If I had built it as a VST (Virtual Synth Tool), it could have been used in almost any music program.
