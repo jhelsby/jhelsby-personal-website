@@ -36,6 +36,23 @@ video {
   max-width: 80ch;
 }
 
+table {
+  @apply w-full border-collapse border border-transparent;
+}
+
+/* Apply styles to table cells */
+table td {
+  @apply py-2 px-4 border border-transparent;
+  margin-right: 500px;
+}
+
+/* Apply styles to table headers */
+table th {
+  @apply py-2 px-4 border border-transparent font-bold;
+}
+
+
+
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
