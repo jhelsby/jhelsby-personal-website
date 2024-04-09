@@ -70,7 +70,7 @@ const Conduit: ProjectFunction = () => {
     details: (
       <div>
         <h2>Demo Images</h2>
-        <p>Conduit is a clean, intuitive, online text editor. Here's a Conduit document discussing quantum entanglement:</p>
+        <p>Conduit is a clean, intuitive, online text editor. Here&apos;s a Conduit document discussing quantum entanglement:</p>
         <Image
           src="/conduit/edit.webp"
           alt="Conduit Demo Image 1"
@@ -92,7 +92,7 @@ const Conduit: ProjectFunction = () => {
           width={960}
           height={600}
         />
-        <p>From here, you can select one of the result buttons to regenerate the output (if you don't like the response), replace the first paragraph with the new one, add it as a new paragraph, combine the two paragraphs, or delete the output.</p>
+        <p>From here, you can select one of the result buttons to regenerate the output (if you don&apos;t like the response), replace the first paragraph with the new one, add it as a new paragraph, combine the two paragraphs, or delete the output.</p>
       </div>
     ),
     url: "https://www.conduits.link/",
