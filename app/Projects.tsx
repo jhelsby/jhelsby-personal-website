@@ -163,13 +163,13 @@ const Deform: ProjectFunction = () => {
         I really enjoyed making deform~ - as my first serious project, I found it immensely satisfying to see something grow from an idea into a real, useable product. I learned a huge amount in the process, and it was also nice to use things I had learned from mathematics which until that point had only been abstract ideas for me. Building a prototype in a Jupyter notebook before implementing the C++ version was also extremely helpful.
       </p>
       <p>
-        In hindsight, there's a number of things I would have done differently, too. The main thing is how unoptimised the code is. It is CPU-intensive, and slow to initialise. I think it would benefit from using a C++ linear algebra library. My prototype used NumPy, which was much more efficient as well as leading to simpler code. At the time I tried to use <a href="https://github.com/dpilger26/NumCpp">NumCPP</a>, but couldn't get it working with the Min-API.
+        In hindsight, there&apos;s a number of things I would have done differently, too. The main thing is how unoptimised the code is. It is CPU-intensive, and slow to initialise. I think it would benefit from using a C++ linear algebra library. My prototype used NumPy, which was much more efficient as well as leading to simpler code. At the time I tried to use <a href="https://github.com/dpilger26/NumCpp">NumCPP</a>, but couldn't get it working with the Min-API.
       </p>
       <p>
         I also think that building the project as a Max/MSP external was a mistake as this severely limited the use cases for the product. If I had built it as a VST (Virtual Synth Tool), it could have been used in almost any music program.
       </p>
       <p>
-        I'm undecided on whether all the mathematical analysis theory was really needed. It probably wasn't strictly necessary, and could have been built without it. But on the other hand, I found much of it extremely useful, and I took a huge amount of inspiration from ideas in analysis when conceiving of the project.
+        I'm undecided on whether all the mathematical analysis theory was really needed. It probably wasn&apos;t strictly necessary, and could have been built without it. But on the other hand, I found much of it extremely useful, and I took a huge amount of inspiration from ideas in analysis when conceiving of the project.
       </p>
       <p>
         All in all, I found deform~ to be an extremely rewarding first project, both in terms of the finished product and in lessons I took away from building it.
@@ -318,6 +318,5 @@ const ProjectToggles: React.FC<ProjectTogglesProps> = ({ options }) => {
     </div>
   );
 };
-
 
 export default Projects;
