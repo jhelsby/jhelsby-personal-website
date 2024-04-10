@@ -1,19 +1,20 @@
 'use client'
 
 import React from 'react';
-import { Sidebar, SidebarToggle } from '../../Sidebar';
+import Post from '../Post';
 
-export default function Post() {
+const slug = "first-post"
+const body = <div>
+  <p>
+    test
+  </p>
+</div>
+
+export default function Page() {
   return (
-    <div id="outer-container">
-      <Sidebar />
-      <div id="page-wrap">
-        <h1><SidebarToggle /> First Post - Introduction and Motivation.</h1>
-        <p><a href="/blog">Back to blog homepage</a>.</p>
-        <p>
-          Introduction.
-        </p>
-      </div>
-    </div>
+    <Post
+      slug={slug}
+      body={body}
+    />
   );
 };

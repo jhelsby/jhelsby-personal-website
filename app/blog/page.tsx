@@ -10,9 +10,17 @@ interface BlogPost {
   date: string;
 }
 
-const blogPosts: BlogPost[] = [
-  { slug: 'libraries', title: 'On Libraries and Dependencies', date: '2024-04-05' },
-  { slug: 'first-post', title: 'First Post - Introduction and Motivation', date: '2024-04-06' },
+export const blogPosts: BlogPost[] = [
+  {
+    slug: 'libraries',
+    title: 'On Libraries and Dependencies',
+    date: '2024-04-05'
+  },
+  {
+    slug: 'first-post',
+    title: 'First Post - Introduction and Motivation',
+    date: '2024-04-06'
+  },
 ];
 
 const formatDate = (dateString: string): string => {
