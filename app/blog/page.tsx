@@ -27,7 +27,7 @@ export default function Blog() {
       <Sidebar />
       <div id="page-wrap">
         <h1><SidebarToggle /> My Technical Blog.</h1>
-        <p>I&apos;m keeping this blog mostly to try and develop as an engineer and technical writer - but of course would love it if you found any of these posts useful or interesting. If you have any comments or questions, please don&apos;t hesitate to <a href="https://www.linkedin.com/in/john-h-366980236/">connect on LinkedIn</a> or <a href="./contact">get in touch</a>!</p>
+        <p>I&apos;m keeping this blog mostly to try and develop my engineering and technical writing skills - but of course would love it if you found any of these posts useful or interesting. If you have any comments or questions, please don&apos;t hesitate to <a href="https://www.linkedin.com/in/john-h-366980236/">connect on LinkedIn</a> or <a href="./contact">get in touch</a>!</p>
         <ul>
           {blogPosts.map(post => (
             <li key={post.slug}>
