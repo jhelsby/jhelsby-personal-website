@@ -16,7 +16,7 @@ interface FormProps {
     formInputs: Input[];
 }
 
-const Form: React.FC<FormProps> = ({ formInputs }) => {
+const Form: React.FC<FormProps> = ({ subject, formInputs }) => {
     const accessKey = '861e7f48-e941-44e4-9650-ba0567db088a';
     const { register, handleSubmit } = useForm();
     const [buttonColor, setButtonColor] = useState('');
@@ -26,7 +26,7 @@ const Form: React.FC<FormProps> = ({ formInputs }) => {
         access_key: accessKey,
         settings: {
             from_name: 'mail@jhelsby.com',
-            subject: 'New Contact Message from jhelsby.com.',
+            subject: subject,
         },
         onSuccess: (message: string, data: any) => {
             console.log(message);
