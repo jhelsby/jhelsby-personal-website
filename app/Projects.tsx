@@ -39,7 +39,7 @@ const ThisWebsite: ProjectFunction = () => {
     summary: <p>I built this site with HTML, CSS, TypeScript, React and Next.js.</p>,
     description: (<div><p>The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, {/* , and the Request My CV page is implemented using various AWS services, */}and I deployed the site with <a href="https://vercel.com/">Vercel</a>. </p></div>),
     // details: <div>expandable content</div>,
-    repo: "https://github.com/jhels/personal-website"
+    repo: "https://github.com/jhelsby/jhelsby-personal-website"
   };
 }
 
@@ -54,7 +54,7 @@ const GlobalTxt: ProjectFunction = () => {
       </div>),
     details: <div>TBC</div>,
     url: "http://localhost:3000/",
-    repo: "https://github.com/jhels/TranslationChat"
+    repo: "https://github.com/jhelsby/TranslationChat"
   };
 }
 
@@ -118,7 +118,7 @@ const Deform: ProjectFunction = () => {
         [deform~] was my first serious programming project, completed in the year prior to starting my Computer Science & Mathematics BSc. The idea was to independently design and implement a novel real-time audio effect from scratch.
       </p>
       <p>
-        An additional challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhels/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on development and implementation.
+        An additional challenge I gave to myself was to completely develop the idea on paper first, before writing any code. You can read the whitepaper I wrote up during this process <a href="https://github.com/jhelsby/deform-/blob/main/ContinuousDeformation.pdf">here</a>, or expand the Details tab below for more information on development and implementation.
       </p>
       <p>
         See the demo video below for some sample audio output, given basic waveforms as input. Before viewing, please ensure your sound is switched on, and not too loud!
@@ -197,7 +197,7 @@ const Deform: ProjectFunction = () => {
         All in all, I found [deform~] to be a highly rewarding first project, in terms of both the finished product and the lessons I took away from building it.
       </p>
     </div>,
-    repo: "https://github.com/jhels/deform-"
+    repo: "https://github.com/jhelsby/deform-"
   };
 }
 
