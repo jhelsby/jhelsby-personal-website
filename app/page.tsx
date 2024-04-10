@@ -29,7 +29,7 @@ export default function Home() {
             <ul>
               <li><a href="/about">About Me</a>.</li>
               <li><a href="https://github.com/jhels/">My GitHub</a>.</li>
-              <li><a href="https://www.linkedin.com/in/john-h-366980236/">My LinkedIn profile</a>.</li>
+              <li><a href="https://www.linkedin.com/in/johnhelsby/">My LinkedIn profile</a>.</li>
               <li><a href="/cv">My CV</a>.</li>
               <li><a href="/cv">My Technical Blog</a>.</li>
               <li><a href="/contact">Contact Me</a>.</li>
@@ -38,7 +38,7 @@ export default function Home() {
 
           <p>Finally, a few of my coding projects can be found below. Please select a project to read more, view the codebase, or see the application in action.</p>
 
-          <p> Thank you for reading - and please don&apos;t hesitate to <a href="/contact">get in touch</a> or <a href="https://www.linkedin.com/in/john-h-366980236/" >connect on LinkedIn</a> if you have any comments or questions. Have a great rest of your day!</p>
+          <p> Thank you for reading - and please don&apos;t hesitate to <a href="/contact">get in touch</a> or <a href="https://www.linkedin.com/in/johnhelsby/" >connect on LinkedIn</a> if you have any comments or questions. Have a great rest of your day!</p>
 
           <p>- John. 😊</p>
           <h2>Projects.</h2>

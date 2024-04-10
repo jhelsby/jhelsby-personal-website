@@ -13,7 +13,7 @@ const Sidebar = React.forwardRef<HTMLDivElement>((props, ref) => {
         <li><a href="/about">About Me</a></li>
         <li><a href="/#projects">Projects</a></li>
         <li><a href="https://github.com/jhelsby/">My GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/john-h-366980236/">My LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/johnhelsby/">My LinkedIn</a></li>
         <li><a href="/cv">Request my CV</a></li>
         <li><a href="/blog">Technical Blog</a></li>
         <li><a href="/contact">Contact Me</a></li>
@@ -56,7 +56,7 @@ const SidebarToggle = () => {
     { text: 'About', url: '/about' },
     { text: 'Projects', url: '/#projects' },
     { text: 'GitHub', url: 'https://github.com/jhelsby/' },
-    { text: 'LinkedIn', url: 'https://www.linkedin.com/in/john-h-366980236/' },
+    { text: 'LinkedIn', url: 'https://www.linkedin.com/in/johnhelsby/' },
     { text: 'CV', url: '/cv' },
     { text: 'Blog', url: '/blog' },
     { text: 'Contact', url: '/contact' }
