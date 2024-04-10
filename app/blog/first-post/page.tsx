@@ -13,7 +13,7 @@ const body = <div>
     I&apos;d like to make the effort to consistently reflect on and consolidate the things I learn as I progress through my studies and career. At least in my own experience, I&apos;ve found that this can really make the difference between just about being able to do something, and actually understanding it.
   </p>
   <p>
-    In the midst of a busy project, for example, I frequently forget to take a step back to consider the broader implications of what I&apos;m doing. When I take the time to do this, I tend to take away far more from the experience. And when I don't, I inevitably find myself making the same mistakes over and over &ndash; which is hardly a surprise, since I've not bothered to figure out how to prevent them.
+    In the midst of a busy project, for example, I frequently forget to take a step back to consider the broader implications of what I&apos;m doing. When I take the time to do this, I tend to take away far more from the experience. And when I don&apos;t, I inevitably find myself making the same mistakes over and over &ndash; which is hardly a surprise, since I&apos;ve not bothered to figure out how to prevent them.
   </p>
   <p>
     I&apos;m most interested in working on genuinely useful, impactful and reliable technology. If, as is my aspiration, I end up working somewhere which builds such things, that means that people will be relying on my code to actually work. Given the ubiquity of software in almost all facets of modern life, but in particular safety-critical fields such as medicine, transport, power, financial services, emergency response systems, and the like, I really want to treat this craft with the seriousness it deserves.
