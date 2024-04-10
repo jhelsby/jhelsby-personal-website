@@ -4,7 +4,7 @@ import React from 'react';
 import { Sidebar, SidebarToggle } from '../Sidebar';
 import Form from '../Form';
 
-export const formInputs = [
+const formInputs = [
   { name: "name", label: "Name", type: "text", validation: { required: 'Full name is required', maxLength: 30 } },
   { name: "organisation", label: "Organisation (optional)", type: "text", validation: { maxLength: 30 } },
   { name: "email", label: "Email", type: "email", validation: { required: 'Enter your email', maxLength: 254, pattern: { value: /^\S+@\S+$/i, message: 'Please enter a valid email' } } },
