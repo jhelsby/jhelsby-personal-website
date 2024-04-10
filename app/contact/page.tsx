@@ -17,7 +17,7 @@ export default function Contact() {
       <div id="page-wrap">
         <h1><SidebarToggle /> Contact Me.</h1>
         <p>Please fill in the form to contact me by email, or <a href="https://www.linkedin.com/in/john-h-366980236/" >connect with me on LinkedIn</a> if you&apos;d prefer.</p>
-        <Form formInputs={formInputs} />
+        <Form subject='New Contact Message from jhelsby.com' formInputs={formInputs} />
       </div>
     </div>
   );

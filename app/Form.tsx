@@ -12,6 +12,7 @@ interface Input {
 }
 
 interface FormProps {
+    subject: string;
     formInputs: Input[];
 }
 
