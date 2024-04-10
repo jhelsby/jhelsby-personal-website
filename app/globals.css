@@ -11,6 +11,10 @@
     @apply text-3xl;
   }
 
+  h3 {
+    @apply text-2xl;
+  }
+
   ul {
     @apply list-disc pl-4;
   }
@@ -21,7 +25,8 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: bold;
 }
 
