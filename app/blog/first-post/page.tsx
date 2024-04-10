@@ -25,7 +25,7 @@ const body = <div>
   <p>
     As an undergraduate student, I can&apos;t claim to know this from personal experience in industry, but everything I have read, watched and heard attests to the idea that technical communication is one of the single most important skills an engineer can have &ndash; at every level, but increasingly so as you grow in seniority.
   </p>
-  <p>My goals in this respect are simple: I&apos;ll try and keep my blog posts concise and clear throughout. I&apos;ll also try to write posts targeted at different audiences, ranging from the general reader to the most technical subjects I can manage. With any luck, if I can keep putting in the time, I&apos;ll see meaningful progress over the course of this blog series.</p>
+  <p>My goals in this respect are simple: I&apos;ll try and keep my blog posts concise and clear throughout. I&apos;ll also try to write posts targeted at different audiences, ranging from the general reader to the most technical subjects I can manage. And with any luck, if I can keep putting in the time, I&apos;ll see meaningful progress over the course of this blog series.</p>
   <p>If you ever have any feedback on how I can improve my technical writing, please feel free to <a href="../contact">send me a message</a>.</p>
 </div>
 
