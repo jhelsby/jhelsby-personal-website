@@ -2,7 +2,7 @@
 
 import React, { ReactNode } from 'react';
 import { Sidebar, SidebarToggle } from '../Sidebar';
-import { blogPosts } from './page';
+import { blogList } from './blogList';
 
 interface PostProps {
     slug: string;
@@ -11,7 +11,7 @@ interface PostProps {
 
 const Post: React.FC<PostProps> = ({ slug, body }) => {
 
-    const post = blogPosts.find(post => post.slug === slug);
+    const post = blogList.find(post => post.slug === slug);
 
     const title = post ? post.title : '404';
     const date = post ? post.date : 'Post not found';
