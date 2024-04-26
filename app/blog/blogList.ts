@@ -11,6 +11,11 @@ export const blogList: BlogList[] = [
     //     date: '2024-04-05'
     // },
     {
+        slug: 'uncertainty',
+        title: 'Handling Uncertainty',
+        date: '2024-04-26'
+    },
+    {
         slug: 'first-post',
         title: 'First Post - Introduction and Motivation',
         date: '2024-04-10'

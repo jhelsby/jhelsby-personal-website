@@ -126,6 +126,21 @@ a:visited {
   margin-bottom: 40px;
 }
 
+blockquote {
+  margin: 20;
+  padding: 10px;
+
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+blockquote footer {
+  text-align: right;
+}
+
+
 #outer-container {
   display: flex;
   /* min-height: 100vh; */
