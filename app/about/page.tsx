@@ -9,7 +9,7 @@ interface Entry {
   company: string;
   start: string;
   end: string;
-  tools: string;
+  tools?: string;
   description: ReactNode;
 }
 
@@ -49,12 +49,19 @@ const education: Entry[] = [
         <li>Vector spaces and linear algebra.</li>
         <li>Groups, rings and modules.</li>
       </ul>
-      <p>In the my final year of my course, students can choose which modules they wish to study. It is not clear at present which Computer Science modules are available to me, but I intend to take Mathematics courses focused on numerical analysis, optimisation and graph theory.</p>
+      <p>In the my final year of my course, students can choose which modules they wish to study. I hope to take Computer Science courses in Bayesian machine learning, advanced algorithms and complexity, and natural language processing; and Mathematics courses in numerical analysis, optimisation methods of operational research, numerical optimisation and/or graph theory.</p>
     </div>
   },
 ];
 
 const experiences: Entry[] = [
+  {
+    title: "Software Development Engineer Intern",
+    company: "Amazon, London",
+    start: "June 2024",
+    end: "November 2024",
+    description: <p>I will be starting a six month Software Development Engineering placement with Amazon this summer, at their <a href="https://www.aboutamazon.co.uk/news/working-at-amazon/amazon-office-london-photo-tour">1 Principal Place</a> office in London. I am extremely excited to embark upon this amazing opportunity.</p>
+  },
   {
     title: "Compiler Developer Intern",
     company: "Wolfram Research, Oxfordshire",
@@ -84,7 +91,7 @@ const Section: React.FC<SectionProps> = ({ entries, sectionTitle }) => {
       {entries.map((entry, index) => (
         <div key={index} style={{ marginBottom: '2rem' }}>
           <p><strong>{entry.title}, {entry.company}.</strong><br />{entry.start} &ndash; {entry.end}</p>
-          <p>Tools used: <i>{entry.tools}</i></p>
+          {entry.tools !== undefined && (<p>Tools used: <i>{entry.tools}</i></p>)}
           {entry.description}
         </div>
       ))}
