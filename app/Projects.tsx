@@ -37,7 +37,7 @@ function Projects() {
 const ThisWebsite: ProjectFunction = () => {
   return {
     summary: <p>I built this site with HTML, CSS, TypeScript, React and Next.js.</p>,
-    description: (<div><p>The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, and I deployed the site with <a href="https://vercel.com/">Vercel</a>. </p></div>),
+    description: (<div><p>The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, I deployed the site with <a href="https://vercel.com/">Vercel</a>, and I registered this domain with <a href="https://porkbun.com/">Porkbun</a>.</p></div>),
     repo: "https://github.com/jhelsby/jhelsby-personal-website"
   };
 }
