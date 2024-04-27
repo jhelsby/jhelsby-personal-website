@@ -17,7 +17,7 @@ export const blogList: BlogList[] = [
     },
     {
         slug: 'first-post',
-        title: 'First Post - Introduction and Motivation',
+        title: 'My First Post - Introduction and Motivation',
         date: '2024-04-10'
     },
 ];

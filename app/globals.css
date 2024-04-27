@@ -127,13 +127,13 @@ a:visited {
 }
 
 blockquote {
-  margin: 20;
   padding: 10px;
 
 }
 
 blockquote p {
   font-style: italic;
+  margin-left: 20px;
 }
 
 blockquote footer {
