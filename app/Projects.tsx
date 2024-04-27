@@ -37,8 +37,7 @@ function Projects() {
 const ThisWebsite: ProjectFunction = () => {
   return {
     summary: <p>I built this site with HTML, CSS, TypeScript, React and Next.js.</p>,
-    description: (<div><p>The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, {/* , and the Request My CV page is implemented using various AWS services, */}and I deployed the site with <a href="https://vercel.com/">Vercel</a>. </p></div>),
-    // details: <div>expandable content</div>,
+    description: (<div><p>The Contact Me page uses <a href="https://web3forms.com/">Web3Forms</a>, and I deployed the site with <a href="https://vercel.com/">Vercel</a>. </p></div>),
     repo: "https://github.com/jhelsby/jhelsby-personal-website"
   };
 }
@@ -227,7 +226,6 @@ function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProject
     maxWidth: 'fit-content',
     gap: '8px',
     margin: '7px',
-    // marginLeft: '7px'
   };
 
   const urlTextStyle = {
