@@ -23,7 +23,7 @@ const body = <div>
   <h3>Science</h3>
   <p>My understanding of how science is able to make concrete progress in the face of uncertainty is simply the <a href="https://en.wikipedia.org/wiki/Scientific_method">scientific method</a>. Some additional resources:</p>
   <ul>
-    <li>I am currently reading philosopher of science Karl Popper&apos;s book <a href="https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery"><i>The Logic of Scientific Discovery</i></a>, examining the nature of scientific methodology and discovery.</li>
+    <li>Philosopher of science Karl Popper&apos;s book <a href="https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery"><i>The Logic of Scientific Discovery</i></a>, examining the nature of scientific methodology and discovery.</li>
     <li><a href="https://books.google.co.uk/books/about/Einstein_s_Luck.html?id=Q944_kVKfqcC&source=kp_book_description&redir_esc=y"><i>Einstein&apos;s Luck</i></a>, by historian John Waller, examines the role that myth, ambition and dishonesty has played in the history of science and prominent scientists.</li>
     <li>Nassim Taleb&apos;s <a href="https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb#Incerto"><i>Incerto</i></a> collection is devoted to the study of uncertainty in a world we don&apos;t understand.</li>
     <li>Ed Thorp&apos;s memoir <a href="https://www.edwardothorp.com/books/a-man-for-all-markets/"><i>A Man For All Markets</i></a>. Thorp is a mathematics professor, the inventor of card counting in blackjack, and a pioneer in <a href="https://en.wikipedia.org/wiki/Market_neutral">market-neutral hedging</a>. I learned much from his life story and his views on handling risk. </li>
