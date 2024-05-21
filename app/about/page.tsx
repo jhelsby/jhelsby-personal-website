@@ -107,9 +107,9 @@ export default function About() {
       <div id="page-wrap">
         <h1> <SidebarToggle /> About Me.</h1>
         <p>I&apos;m John Helsby, a backend software engineer with a passion for technology and innovation as a force for good. I&apos;m particularly interested in scalable systems, distributed computing, artificial intelligence, and how these tools can be applied to benefit ordinary people the world over.</p>
-        <p>For more on my technical interests, please see my <a href="./blog">blog</a>. You can read about my <a href="#education">education</a> and <a href="#experience">professional experience</a> below, or see my <a href="https://www.linkedin.com/in/johnhelsby/">LinkedIn page</a> for more information.</p>
-        <Section id="education" entries={education} sectionTitle="Education" />
+        <p>For more on my technical interests, please see my <a href="./blog">blog</a>. You can read about my <a href="#experience">professional experience</a> and <a href="#education">education</a> below, or see my <a href="https://www.linkedin.com/in/johnhelsby/">LinkedIn page</a> for more information.</p>
         <Section id="experience" entries={experiences} sectionTitle="Experience" />
+        <Section id="education" entries={education} sectionTitle="Education" />
       </div>
     </div >
   );
