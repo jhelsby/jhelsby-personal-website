@@ -17,7 +17,7 @@ export default function Home() {
             className="photo"
           />
           <div>
-            <p>Welcome to my coding website! I&apos;m John Helsby, a backend software engineer and a Computer Science & Mathematics BSc (Hons) student at the University of Bath, United Kingdom.</p>
+            <p>Welcome to my coding website! I&apos;m John Helsby, a software engineer and a Computer Science & Mathematics BSc (Hons) student at the University of Bath, United Kingdom.</p>
             <p>I&apos;m a passionate believer in the power of computing and technology, appropriately applied, to solve important problems and benefit humanity as a whole. I&apos;m particularly interested in scalable systems, distributed computing, and artificial intelligence.
             </p>
           </div>
