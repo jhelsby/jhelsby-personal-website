@@ -5,11 +5,11 @@ interface BlogList {
 }
 
 export const blogList: BlogList[] = [
-    // {
-    //     slug: 'libraries',
-    //     title: 'On Libraries and Dependencies',
-    //     date: '2024-04-05'
-    // },
+    {
+        slug: 'dependencies',
+        title: 'Dependencies',
+        date: '2024-05-31'
+    },
     {
         slug: 'uncertainty',
         title: 'Handling Uncertainty',

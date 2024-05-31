@@ -28,7 +28,7 @@ const education: Entry[] = [
     tools: "Python, Java, C, Git, Django, NumPy, Haskell.",
     description: <div>
       <p>My course includes a year-long industrial placement after my second year.</p>
-      <p>I am currently in second year. On the Computer Science side of my course, I&apos;ve studied:</p>
+      <p>I am currently on my placement year. On the Computer Science side of my course, I&apos;ve studied:</p>
       <ul>
         <li>core principles of programming in Python, Java and C.</li>
         <li>data structures and algorithms.</li>
