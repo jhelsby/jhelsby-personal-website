@@ -61,7 +61,7 @@ const experiences: Entry[] = [
     company: "Amazon, London",
     start: "June 2024",
     end: "November 2024",
-    description: <p>I will be starting a six month Software Development Engineering placement with Amazon this summer, at their <a href="https://www.aboutamazon.co.uk/news/working-at-amazon/amazon-office-london-photo-tour">1 Principal Place</a> office in London. I am extremely excited to embark upon this amazing opportunity.</p>
+    description: <p>I am currently undertaking a six month Software Development Engineering placement with Amazon this summer, at their <a href="https://www.aboutamazon.co.uk/news/working-at-amazon/amazon-office-london-photo-tour">1 Principal Place</a> office in London.</p>
   },
   {
     title: "Compiler Developer Intern",
