@@ -62,7 +62,7 @@ const experiences: Entry[] = [
     start: "June 2024",
     end: "November 2024",
     description: <div><p>I am currently undertaking a six month Software Development Engineering placement with Amazon, at their <a href="https://www.aboutamazon.co.uk/news/working-at-amazon/amazon-office-london-photo-tour">1 Principal Place</a> office in London.</p>
-      <p>I am working in the Rufus Voice team, on Amazon's mobile app. <a href="https://www.aboutamazon.com/news/retail/amazon-rufus">Rufus</a> is an LLM chatbot which provides a new, generative AI-powered, conversational shopping experience.</p>
+      <p>I am working in the Rufus Voice team, on Amazon&apos;s mobile app. <a href="https://www.aboutamazon.com/news/retail/amazon-rufus">Rufus</a> is an LLM chatbot which provides a new, generative AI-powered, conversational shopping experience.</p>
     </div>
   },
   {
