@@ -8,24 +8,28 @@ const body = <div>
   <h2>Dependencies.</h2>
   <h3>Technicalities</h3>
   <p>
-    When trying to solving a problem, I often begin by trying to see if it has already been solved by someone else. In software, this might be anything from a complete product, to a library, to a line or two of code. Provided that the goal is to solve the problem, rather than train one&apos;s problem solving abilities, this approach can often make a lot of sense &ndash; why reinvent the wheel without good reason?
+    When trying to solve a problem, I often begin by looking around, to see if it has already been solved by someone else. In software, this might be anything from a complete product, to a library, to a line or two of code. Provided that the goal is to solve the problem, rather than train one&apos;s problem-solving abilities, this approach can often make a lot of sense &ndash; why reinvent the wheel without good reason?
   </p>
   <p>
-    Each time you do this, you are depending on someone else to solve your problem. There are two critical questions which I think must be asked each time you do this:
+    Now &ndash; each time you do this, you are depending on someone else to solve your problem. There are two critical questions which I think must be asked each time you do this:
   </p>
   <ol>
     <li>Is this code really solving the <i>your</i> problem?</li>
-    <li>Does this code actually work?</li>
+    <li>Does this code really work?</li>
   </ol>
-  <p>Someone else wrote this code. If they were working on the exact same problem which you are, then great &ndash; you just need to make sure they got it right. Even this is much easier said than done.</p>
-  <p>At other times, though, they will have been solving a slightly different problem. (I would guess this happens more often, but who knows.) Maybe their problem was more general, or less general, or intended for different hardware, or different users, or a smaller userbase, or a much bigger userbase, or needed to be more robust, or didn&apos;t need to be robust at all, or needed to work for the next 50 years, or didn&apos;t need to work for more than an hour, or designed to be updated every couple of days, or built on top of ancient and vulnerable legacy software, or... And in all of these cases, of course, it could <i>also</i> be filled with bugs!</p>
-  <p>There is much more to say about this on the technical side, but I&apos;m not sure that I&apos;m the best person to say it. Here are some experienced engineers discussing the same issue. I will update this list if I find anything new.</p>
+  <p>Someone else wrote this code. If they were working on the exact same problem as you, then great &ndash; you just need to make sure they got it right (though this is easier said than done).</p>
+  <p>At other times, though, they will have been solving a slightly different problem. Maybe theirs was more general, or less, or intended for different hardware, or different users, or a smaller userbase, or a much bigger userbase, or needed to be more robust, or didn&apos;t need to be robust at all, or needed to work for the next 50 years, or didn&apos;t need to work for more than an hour, or was designed to be updated every couple of days, or was built on top of ancient and vulnerable legacy software, or... And in all of these cases, of course, it could <i>also</i> be ridden with bugs!</p>
+  <p>There is much more to say about this on the technical side, but I&apos;m not sure that I&apos;m the best person to say it. Here are some experienced engineers discussing the same issue. I&apos;ll update this list if I find anything new.</p>
   <ol>
     <li>Thorsten Ball - <a href="https://thorstenball.com/blog/2022/05/17/professional-programming-the-first-10-years/#using-other-peoples-code-is-not-as-good-as-i-thought">Using other people&apos;s code is not as good as I thought</a> (2022).</li>
     <li>A <a href="https://x.com/mitchellh/status/1795554156150657420">series of tweets</a> by Mitchell Hashimoto, founder of <a href="https://en.wikipedia.org/wiki/HashiCorp">HashiCorp</a> - see the linked tweet and his replies. </li>
   </ol>
-  <h3>Analogies</h3>
-  <p>[TODO]</p>
+  <h3>Deferred costs: the illusion of ease</h3>
+  <p>One reason it is so tempting to introduce a dependency, I think, is simply because it is easy. With open-source software, all you need is a <code>git pull</code> and an <code>import</code>; and without having to spend an ounce of effort or money, you have tens, hundreds, or even thousands of hours&apos; worth of someone else&apos;s code working for you. It&apos;s as though you were doing some DIY work, and each time you got stuck, you could teleport whichever tools or materials you wanted right into your hand.</p>
+  <p>The problem is... where did that code come from? What was it for? How well has it been tested? To continue the DIY analogy, would you want to build your house out of bricks made by an amateur, or someone new to the trade? Or paving bricks you mistakenly materialised into your hand?</p>
+  <p>When there is a substantial cost to getting hold of something, whether time, money, energy, or anything else, it forces you to think about your decision <i>before</i> you act. You want it to be worth the price. The bigger the cost, the more you&apos;d want to think about it.</p>
+  <p>Importing other people&apos;s code takes no thought whatsoever. In the short-term, it&apos;s often the easiest thing you can do &ndash; far easier than solving a problem yourself. But if their code is not truly what you need, you may be paying for it at some indeterminate point in the future. And the more you&apos;ve built on top of shaky foundations, the more work you&apos;re going to have to do to fix it.</p>
+  <p>So perhaps we can consider certain unfamiliar dependencies as having a potential deferred cost; a possibility we should consider before relying on them too heavily. More simply put, <a href="https://en.wikipedia.org/wiki/No_such_thing_as_a_free_lunch">there&apos;s no such thing as a free lunch</a>; or, <a href="https://en.wikipedia.org/wiki/He_who_does_not_work,_neither_shall_he_eat">he who does not work, neither shall he eat</a>.</p>
 </div>
 
 export default function Page() {
