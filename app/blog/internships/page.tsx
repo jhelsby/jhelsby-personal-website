@@ -26,7 +26,7 @@ const body = <div>
     <h2>The Interview Process</h2>
     <h3>Behavioural Interviews</h3>
     <p>There are many good resources out there for behavioural interviews, so I don&apos;t have too much to say here. One thing I would suggest is not to neglect this portion of the process just because you are applying for a technical role. If you have worked hard on your CV and projects to get the interview, you will have a lot of good material to discuss in this section &ndash; you just need to make sure you present it in the best way that you can.</p>
-    <p>Another thing which I think might be useful is to try to develop, and demonstrate, a level of interest and understanding in the business side of the tech industry &apos; even if you much prefer coding.</p>
+    <p>Another thing which I think might be useful is to try to develop, and demonstrate, a level of interest and understanding in the business side of the tech industry. I think can be important even if you much prefer coding and the technical side of software engineering.</p>
     <p>I found these articles useful to prepare for the behavioural part of the interview process, among others: </p>
     <ul>
         <li><a href="https://www.aboutamazon.com/news/workplace/amazon-interview-best-tips">An Amazon recruiting manager offers his 3 best tips for a successful job interview</a>.</li>
