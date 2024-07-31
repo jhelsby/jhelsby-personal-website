@@ -11,7 +11,7 @@ const body = <div>
     <h2>Securing an Interview</h2>
     <p>Here are some points you may wish to consider during the application process, while trying to secure an interview. You may consider some or all of these to be extremely obvious 😄</p>
     <ul>
-        <li>Perfect your CV. There are many resources on how to do this; for example, see <a href="https://formation.dev/blog/software-engineer-resume-guide-examples/">this article</a> from a former Google and Facebook recruiter, but there is much much more out there. The points below may also provide material to include on there. [Note: the article I linked recommends using a one-page CV, but in the UK my understanding is that two pages is often fine, and sometimes preferred.] </li>
+        <li>Perfect your CV. There are many resources on how to do this; for example, see <a href="https://formation.dev/blog/software-engineer-resume-guide-examples/">this article</a> from a former Google and Facebook recruiter, but there is much much more out there. Some of the points below may also provide useful material to include on your CV. [Note: the article I linked recommends restricting your CV to a single page, but in the UK my understanding is that two pages is often fine, and sometimes preferred.] </li>
         <li>If at university, try to work hard and get the best grades that you can. My hope is that both the grades and the things you learn will help you!</li>
         <li>Work seriously on coding projects, whether in your spare time, as part of your university course, or elsewhere. For example, you may wish to solve a real-world problem that interests you, and get it to work end-to-end (building, testing, deploying etc.).</li>
         <li>If possible, put a good amount of your work on GitHub.</li>
