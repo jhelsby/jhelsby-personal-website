@@ -6,6 +6,11 @@ interface BlogList {
 
 export const blogList: BlogList[] = [
     {
+        slug: 'internships',
+        title: 'Internship Applications',
+        date: '2024-07-31'
+    },
+    {
         slug: 'dependencies',
         title: 'Dependencies',
         date: '2024-05-31'
