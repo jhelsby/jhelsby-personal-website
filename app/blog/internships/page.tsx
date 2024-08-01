@@ -15,6 +15,7 @@ const body = <div>
         <li>If at school, college, or university, try to work hard and get the best grades that you can. My hope is that both the grades and the things you learn will help you!</li>
         <li>Work seriously on coding projects, whether in your spare time, as part of your studies, or elsewhere. For example, you may wish to solve a real-world problem that interests you, and get it to work end-to-end. By end-to-end I mean from start to finish: building, testing, and, if relevant to your project, deploying online.</li>
         <li>If possible, put a good amount of your work on GitHub.</li>
+        <li>Get some kind of relevant work experience or exposure to a company, no matter how small.</li>
         <li>Consider developing a portfolio website &ndash; some application processes even request these.</li>
         <li>Network, in any appropriate environment. Whether it comes naturally to you or not, I think it can be an unparalleled learning opportunity, and a great chance to meet other people who are passionate about technology and problem-solving.</li>
         <li>Pursue your tech interests, whether through practical experience, blogs, books, projects or elsewhere. Embrace your curiosity and learn as much as possible.</li>
