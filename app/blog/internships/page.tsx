@@ -12,9 +12,10 @@ const body = <div>
     <p>Here are some points you may wish to consider during the application process, while trying to secure an interview. You may consider some or all of these to be extremely obvious 😄</p>
     <ul>
         <li>Perfect your CV. There are many resources on this. For one example, see <a href="https://formation.dev/blog/software-engineer-resume-guide-examples/">this article</a> from a former Google and Facebook recruiter, but there are many, many others out there. Some of the bullet points below may also provide useful material to include on your CV. [Note: the article I linked recommends restricting your CV to a single page, but in the UK my understanding is that two pages is often fine, and sometimes preferred.] </li>
-        <li>If at school or university, try to work hard and get the best grades that you can. My hope is that both the grades and the things you learn will help you!</li>
+        <li>If at school, college, or university, try to work hard and get the best grades that you can. My hope is that both the grades and the things you learn will help you!</li>
         <li>Work seriously on coding projects, whether in your spare time, as part of your studies, or elsewhere. For example, you may wish to solve a real-world problem that interests you, and get it to work end-to-end. By end-to-end I mean from start to finish: building, testing, and, if relevant to your project, deploying online.</li>
         <li>If possible, put a good amount of your work on GitHub.</li>
+        <li>Get some kind of relevant work experience or exposure to a company, no matter how small.</li>
         <li>Consider developing a portfolio website &ndash; some application processes even request these.</li>
         <li>Network, in any appropriate environment. Whether it comes naturally to you or not, I think it can be an unparalleled learning opportunity, and a great chance to meet other people who are passionate about technology and problem-solving.</li>
         <li>Pursue your tech interests, whether through practical experience, blogs, books, projects or elsewhere. Embrace your curiosity and learn as much as possible.</li>
@@ -27,7 +28,7 @@ const body = <div>
     <h2>The Interview Process</h2>
     <h3>Behavioural Interviews</h3>
     <p>There are many good resources out there for behavioural interviews, so I don&apos;t have too much to say here. One thing I would suggest is not to neglect this portion of the process just because you are applying for a technical role. If you have worked hard on your CV and projects to get the interview, you will have a lot of good material to discuss in this section &ndash; you just need to make sure you present it in the best way that you can.</p>
-    <p>Another thing which I think might be useful is to try to develop, and demonstrate, a level of interest in and understanding of the business side of the tech industry. I think this can be important even if you much prefer coding and the technical side of software engineering.</p>
+    <p>Another thing which I think might be useful is to try to develop, and demonstrate, a level of interest in and understanding of the business side of the organisations and industries you are applying for. I think this can be important even if you much prefer coding and the technical side of software engineering.</p>
     <p>I found these articles useful to prepare for the behavioural part of the interview process, among others: </p>
     <ul>
         <li><a href="https://www.aboutamazon.com/news/workplace/amazon-interview-best-tips">An Amazon recruiting manager offers his 3 best tips for a successful job interview</a>.</li>
