@@ -21,7 +21,8 @@ type ProjectInfo = {
 // Main component, called from homepage.
 function Projects() {
   const buttonOptions = [
-    { label: 'This website', project: ThisWebsite },
+    { label: "This website", project: ThisWebsite },
+    { label: "DictionWave", project: DictionWave },
     { label: "Conduit", project: Conduit },
     // { label: 'TranslationChat', project: TranslationChat},
     { label: "[deform~]", project: Deform }
@@ -42,18 +43,25 @@ const ThisWebsite: ProjectFunction = () => {
   };
 }
 
-const GlobalTxt: ProjectFunction = () => {
+const DictionWave: ProjectFunction = () => {
   return {
-    summary: <p>A translator chat application built with Python and AWS.</p>,
+    summary: <p>An NLP-based word-discovery built with Python, NumPy, Flask, and <a href="https://fasttext.cc/">fastText</a> word embeddings.</p>,
     description: (
       <div>
-        <p>GlobalTxt is a real-time text messaging application which translates all messages into the user&apos;s preferred written language. It allows users from all over the world to bypass language barriers and easily communicate with each other via a simple and intuitive UI.</p>
+        <p>DictionWave is a word-discovery tool that lets you surf across the world of English language and meaning, using the power of word embeddings. It uses word vector similarities, a rarity parameter, some randomness, and a minimalist UI, to facilitate word discovery.</p>
 
-        <p>GlobalTxt is built and deployed using a number of AWS services, and integrated into this website.</p>
+        <video width="640" height="360" controls>
+          <source src="/dictionwave_demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>),
-    details: <div>TBC</div>,
-    url: "http://localhost:3000/",
-    repo: "https://github.com/jhelsby/TranslationChat"
+    details: <div>
+      <p>DictionWave uses fastText word embeddings trained on <a href="https://en.wikipedia.org/wiki/Common_Crawl">Common Crawl</a> data to calculate cosine similarities between words. It additionally applies a ranking algorithm based on word frequency, allowing the user to view rarer words as desired, alongside optional randomness. This is implemented in <a href="https://github.com/jhelsby/DictionWave/blob/main/similarity_core.py">similarity_core.py</a>.</p>
+      <p>The fastText database used - crawl-300d-2M.vec - contains two million unique words taken from Common Crawl data; 630 billion words obtained from crawling the web. Many of these are data irrelevant or harmful to this use case, such as numbers, misspellings, duplicates, and obscene or derogatory language. I implemented a number of automated processes alongside manual cleaning to remove as many of these words as possible &ndash; 759,359 at the last count (38%). The code handling this can be seen in <a href="https://github.com/jhelsby/DictionWave/blob/main/filter_embeddings.py">filter_embeddings.py</a>. I would like to reduce this dataset further if possible, using NLP techniques, as a cleaner dataset would improve speed, memory consumption, and output quality.</p>
+      <p>Finally, the web application logic, implemented with Flask, HTML, and CSS, can be found in <a href="https://github.com/jhelsby/DictionWave/blob/main/app.py">app.py</a> and <a href="https://github.com/jhelsby/DictionWave/blob/main/templates/index.html">index.html</a>. I tried to keep the frontend design deliberately minimal, functionality-focused, and (though this is of course completely subjective!), fun to use.</p>
+    </div>,
+    // url: "http://localhost:3000/",
+    repo: "https://github.com/jhelsby/DictionWave"
   };
 }
 
