@@ -45,7 +45,7 @@ const ThisWebsite: ProjectFunction = () => {
 
 const DictionWave: ProjectFunction = () => {
   return {
-    summary: <p>An NLP-based word-discovery built with Python, NumPy, Flask, and <a href="https://fasttext.cc/">fastText</a> word embeddings.</p>,
+    summary: <p>An NLP-based word-discovery tool built with Python, NumPy, Flask, and <a href="https://fasttext.cc/">fastText</a> word embeddings.</p>,
     description: (
       <div>
         <p>DictionWave is a word-discovery tool that lets you surf across the world of English language and meaning, using the power of word embeddings. It uses word vector similarities, a rarity parameter, some randomness, and a minimalist UI, to facilitate word discovery.</p>
