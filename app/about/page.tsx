@@ -61,9 +61,14 @@ const experiences: Entry[] = [
     company: "Amazon, London",
     start: "June 2024",
     end: "November 2024",
-    tools: "Java, Kotlin, Swift, Objective-C, Amazon's internal tooling.",
-    description: <div><p>I&apos;m currently undertaking a six month Software Development Engineering placement with Amazon, at their <a href="https://www.aboutamazon.co.uk/news/working-at-amazon/amazon-office-london-photo-tour">1 Principal Place</a> office in London.</p>
-      <p>I&apos;m working in the Rufus Voice team, on Amazon&apos;s mobile app. <a href="https://www.aboutamazon.com/news/retail/amazon-rufus">Rufus</a> is an LLM chatbot which provides a new, generative AI-powered, conversational shopping experience.</p>
+    tools: "Objective-C, Swift, Java, Kotlin, Swift, React Native, Git.",
+    description: <div>
+      <p>
+        For the first half of my Industrial Placement year at Bath, I completed a six month Software Development Engineering placement with Amazon, at their <a href="https://www.aboutamazon.co.uk/news/working-at-amazon/amazon-office-london-photo-tour">1 Principal Place</a> office in London.
+      </p>
+      <p>
+        I worked on the Rufus Voice team, on Amazon&apos;s mobile app. <a href="https://www.aboutamazon.com/news/retail/amazon-rufus">Rufus</a> is an LLM chatbot which provides a new, generative AI-powered, conversational shopping experience.
+      </p>
     </div>
   },
   {
