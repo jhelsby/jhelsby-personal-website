@@ -12,7 +12,7 @@ const body = <div>
         <li>I think that the official documentation for a given language or tool is always a good place to start, if it exists. Sometimes, official documentation even provides links to recommended learning resources.</li>
         <li>Highly-rated courses on education platforms like Coursera, Udemy and Udacity.</li>
         <li>Google, Stack Exchange, and technical blog posts (though beware of inaccuracies and try to keep to reputable-looking sources where possible).</li>
-        <li>If you feel you have a good understanding of the fundamentals, ChatGPT and other LLMs can be a useful source. However, their propensity to <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">hallucinate</a> makes them risky to depend on. I&apos;m not sure you should use LLMs if you don&apos;t feel confident in your ability to verify the correctness of their claims or code.</li>
+        <li>If you feel you have a good understanding of the fundamentals, ChatGPT and similar LLMs can be useful sources. However, their propensity to <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">hallucinate</a> makes them risky to depend on. I&apos;m not sure you should use LLMs if you don&apos;t feel confident in your ability to verify the correctness of their claims or code.</li>
     </ul>
     <p>If you ever see some term or piece of technology you&apos;re not familiar with, and are curious to learn more, I think that simply looking it up and reading about it can be a great approach. Feel free to do that with anything you might not recognise in the following section.</p>
     <h2>Getting Started</h2>
