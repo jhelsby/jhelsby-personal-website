@@ -17,13 +17,13 @@ export default function Home() {
             className="photo"
           />
           <div>
-            <p>Welcome to my coding website! I&apos;m John Helsby, a software engineer and a Computer Science & Mathematics BSc (Hons) student at the University of Bath, United Kingdom. I am currently a Software Development Engineer intern at Amazon London.</p>
+            <p>Welcome to my coding website! I&apos;m John Helsby, a software engineer and a Computer Science & Mathematics BSc (Hons) student at the University of Bath, United Kingdom.</p>
             <p>I&apos;m a passionate believer in the power of computing and technology, appropriately applied, to solve important problems and benefit humanity as a whole. I&apos;m particularly interested in scalable systems, distributed computing, and artificial intelligence.
             </p>
           </div>
         </div>
         <div>
-          <p>I am most experienced with Python, Java, C, C++, SQL, and AWS. I&apos;m also proficient in JavaScript, TypeScript, Node.js, and React, and I&apos;m always looking to expand my skillset and learn new technologies. For some biographical information, or more on my technological interests and experience, please see:</p>
+          <p>I am most experienced with Python, Java, C, C++, SQL, and AWS. I&apos;m also proficient in JavaScript, TypeScript, and React, and I&apos;m always looking to expand my skillset and learn new technologies. For some biographical information, or more on my technological interests and experience, please see:</p>
 
           <div>
             <ul>
