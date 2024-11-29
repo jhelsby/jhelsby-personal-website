@@ -59,7 +59,7 @@ const body = <div>
         <li>Use resources like The Student Room, Reddit, etc., to learn more about the process.</li>
         <li>For the interview process for many firms, prepare thoroughly for LeetCode. Take courses on Data Structures & Algorithms. The difficulty of the questions will depend on the company. Make sure you communicate well during the interview (see the resources on this above).</li>
         <li>You may be asked to participate in a team exercise assessing your teamwork, communication and behavioural skills.</li>
-        <li>Standard behavioural interview questions are important to prepare too (e.g. "what would you do in this situation", and problem-solving).</li>
+        <li>Standard behavioural interview questions are important to prepare too (e.g. &quot;what would you do in this situation&quot;, and problem-solving).</li>
     </ul>
     <p>I think some of the information in the internships section above could also be relevant for apprenticeship programs.</p>
 </div >
