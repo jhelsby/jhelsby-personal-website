@@ -3,7 +3,7 @@
 import React from 'react';
 import Post from '../Post';
 
-const slug = "internships"
+const slug = "apprenticeships"
 const body = <div>
     <p>I&apos;m very fortunate to be undertaking a Software Development Engineer internship at Amazon London at the moment. Since I started, a few people have asked me if I have any tips on how they might secure a similar role. I don&apos;t know how qualified I am to answer such a question, but would like to help if I can.</p>
     <p>I found that I was repeating myself in these conversations, so I thought I&apos;d gather my general suggestions together here. Please note that these are intended for software engineering internships only, even if aspects might be applicable to other roles. If you have further questions after reading, feel free to <a href="/contact">get in touch</a>.</p>
@@ -50,6 +50,18 @@ const body = <div>
     <h3>Amazon</h3>
     <p>I believe the exact application and interview process for roles at Amazon can vary between teams, so I am unsure how relevant my personal experience would be for you. With that said, my application process involved submitting my CV, a few online coding assessments, and behavioural and technical interviews. I would definitely recommend studying Amazon&apos;s <a href="https://www.aboutamazon.co.uk/who-we-are/leadership-principles">Leadership Principles</a> for the behavioural component.</p>
     <p>I found Amazon&apos;s own resources very helpful to prepare. In particular, <a href="https://www.amazon.jobs/en-gb/landing_pages/interviewing-at-amazon"> Interviewing at Amazon</a> and <a href="https://www.aboutamazon.com/news/workplace/amazon-internship-tips-for-students-and-recent-grads">Amazon internship tips for students and recent grads</a>.</p>
+    <h2>Apprenticeships</h2>
+    <p>I didn&apos;t do an apprenticeship myself, but have been asked about them before, so thought it could be worth including this section. It&apos;s based off information from apprentices I&apos;ve spoken to rather than my own experience so I will keep it brief. I was told the following could be helpful:</p>
+    <ul>
+        <li>Learn at least one language. It doesn&apos;t matter too much which one, as long as it&apos;s fairly common (e.g. Python). Get as good as possible.</li>
+        <li>Build coding projects and include these on your CV.</li>
+        <li>Try to develop a fundamental knowledge of software engineering. For example, you might be asked how to get a picture off Google Images via the backend.</li>
+        <li>Use resources like The Student Room, Reddit, etc., to learn more about the process.</li>
+        <li>For the interview process for many firms, prepare thoroughly for LeetCode. Take courses on Data Structures & Algorithms. The difficulty of the questions will depend on the company. Make sure you communicate well during the interview (see the resources on this above).</li>
+        <li>You may be asked to participate in a team exercise assessing your teamwork, communication and behavioural skills.</li>
+        <li>Standard behavioural interview questions are important to prepare too (e.g. "what would you do in this situation", and problem-solving).</li>
+    </ul>
+    <p>I think some of the information in the internships section above could also be relevant for apprenticeship programs.</p>
 </div >
 
 export default function Page() {
