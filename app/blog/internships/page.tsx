@@ -56,7 +56,7 @@ const body = <div>
         <li>Learn at least one language. It doesn&apos;t matter too much which one, as long as it&apos;s fairly common (e.g. Python). Get as good as possible.</li>
         <li>Build coding projects and include these on your CV.</li>
         <li>Try to develop a fundamental knowledge of software engineering. For example, you might be asked how to get a picture off Google Images via the backend.</li>
-        <li>Use resources like The Student Room, Reddit, etc., to learn more about the process.</li>
+        <li>Use resources like The Student Room, Reddit, etc., to learn more about the process. The exact details will vary between companies.</li>
         <li>For the interview process for many firms, prepare thoroughly for LeetCode. Take courses on Data Structures & Algorithms. The difficulty of the questions will depend on the company. Make sure you communicate well during the interview (see the resources on this above).</li>
         <li>You may be asked to participate in a team exercise assessing your teamwork, communication and behavioural skills.</li>
         <li>Standard behavioural interview questions are important to prepare too (e.g. &quot;what would you do in this situation&quot;, and problem-solving).</li>
