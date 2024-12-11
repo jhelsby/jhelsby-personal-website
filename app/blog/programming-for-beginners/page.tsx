@@ -5,7 +5,7 @@ import Post from '../Post';
 
 const slug = "programming-for-beginners"
 const body = <div>
-    <p>Someone asked me what I would recommend for people interested in software engineering with no programming background. Since I studied programming as part of my university course, I may not be the best qualified person to answer this question &ndash; people who taught themselves from scratch might know better than me. However, I will share a few thoughts and resources in case it is of any use.</p>
+    <p>Someone asked me what I would recommend for people interested in software engineering with no programming background. Since I studied programming as part of my university course, I may not be the best-qualified person to answer this question &ndash; people who taught themselves from scratch might know better than me. However, I will share a few thoughts and resources in case it is of any use.</p>
     <h2>Finding Resources</h2>
     <p>First of all, I think it is important to learn how to find reliable resources for yourself. The tech world is large and a lot of the time you might not have anyone around to point you to the right place &ndash; especially for personal projects. This can be pretty challenging as there are a <i>lot</i> of resources out there, and not all of them are good. Even the best available resources may not always be completely accurate. And unfortunately, the worst resources are often misleading or totally wrong. With that caveat in mind, here are some places you might want to look:</p>
     <ul>
