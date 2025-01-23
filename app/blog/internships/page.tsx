@@ -3,7 +3,7 @@
 import React from 'react';
 import Post from '../Post';
 
-const slug = "apprenticeships"
+const slug = "internships"
 const body = <div>
     <p>I&apos;m very fortunate to be undertaking a Software Development Engineer internship at Amazon London at the moment. Since I started, a few people have asked me if I have any tips on how they might secure a similar role. I don&apos;t know how qualified I am to answer such a question, but would like to help if I can.</p>
     <p>I found that I was repeating myself in these conversations, so I thought I&apos;d gather my general suggestions together here. Please note that these are intended for software engineering internships only, even if aspects might be applicable to other roles. If you have further questions after reading, feel free to <a href="/contact">get in touch</a>.</p>
