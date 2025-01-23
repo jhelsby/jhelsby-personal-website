@@ -57,6 +57,17 @@ const education: Entry[] = [
 
 const experiences: Entry[] = [
   {
+    title: "Software Engineering Intern",
+    company: "Meta, London",
+    start: "June 2025",
+    end: "September 2025",
+    description: <div>
+      <p>
+        I am extremely excited to say that this summer, I will be undertaking a Software Engineering internship at Meta London, working out of the King&apos;s Cross office. I feel hugely fortunate to have this fantastic opportunity, and can&apos;t wait to get started.
+      </p>
+    </div>
+  },
+  {
     title: "Software Development Engineer Intern",
     company: "Amazon, London",
     start: "June 2024",
