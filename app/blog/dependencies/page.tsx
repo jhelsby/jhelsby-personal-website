@@ -23,6 +23,8 @@ const body = <div>
   <ol>
     <li>Thorsten Ball - <a href="https://thorstenball.com/blog/2022/05/17/professional-programming-the-first-10-years/#using-other-peoples-code-is-not-as-good-as-i-thought">Using other people&apos;s code is not as good as I thought</a> (2022).</li>
     <li>A <a href="https://x.com/mitchellh/status/1795554156150657420">series of tweets</a> by Mitchell Hashimoto, founder of <a href="https://en.wikipedia.org/wiki/HashiCorp">HashiCorp</a> - see the linked tweet and his replies. </li>
+    <li>Armin Ronacher - <a href="https://lucumr.pocoo.org/2025/1/24/build-it-yourself/
+">Build It Yourself</a> (2025).</li>
   </ol>
   <h3>Deferred costs: the illusion of ease</h3>
   <p>One reason it is so tempting to introduce a dependency, I think, is simply because it is easy. With open-source software, all you need is a <code>git pull</code> and an <code>import</code>; and without having to spend an ounce of effort or money, you have tens, hundreds, or even thousands of hours&apos; worth of someone else&apos;s code working for you. It&apos;s as though you were doing some DIY work, and each time you got stuck, you could teleport whichever tools or materials you wanted right into your hand.</p>
