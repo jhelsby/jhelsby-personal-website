@@ -24,7 +24,7 @@ function Projects() {
     { label: "This website", project: ThisWebsite },
     { label: "DictionWave", project: DictionWave },
     { label: "Conduit", project: Conduit },
-    // { label: 'TranslationChat', project: TranslationChat},
+    { label: 'Lox Interpreters', project: LoxInterpreters },
     { label: "[deform~]", project: Deform }
   ];
 
@@ -121,6 +121,18 @@ const Conduit: ProjectFunction = () => {
     ),
     url: "https://www.conduits.link/",
     repo: "https://github.com/conduits-link/"
+  };
+}
+
+const LoxInterpreters: ProjectFunction = () => {
+  return {
+    summary: <p>
+      Notes on <i>jlox</i>, a tree-walk interpreter for the programming language Lox, written in Java.
+    </p>,
+    description: <p>
+      <i>jlox</i> and Lox are described in [Crafting Interpreters](https://craftinginterpreters.com/) (2021), by Robert Nystrom. Lox is a simple, dynamically typed, object-oriented language. Once I complete these notes, I plan to implement my own interpreter based on _clox_, the book&apos;s more efficient C-based interpreter.
+    </p>,
+    repo: "https://github.com/jhelsby/jlox-notes"
   };
 }
 
@@ -226,7 +238,7 @@ const Deform: ProjectFunction = () => {
 // Factory function for individual projects.
 type ProjectFunction = () => ProjectInfo
 
-// Stores project data, alongside whether the  
+// Stores project data, alongside whether the
 // details section is expanded.
 interface RenderProjectProps {
   projectData: ProjectInfo;
