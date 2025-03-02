@@ -130,7 +130,7 @@ const LoxInterpreters: ProjectFunction = () => {
       Notes on <i>jlox</i>, a tree-walk interpreter for the programming language Lox, written in Java.
     </p>,
     description: <p>
-      <i>jlox</i> and Lox are described in <a href="https://craftinginterpreters.com/">Crafting Interpreters</a> (2021), by Robert Nystrom. Lox is a simple, dynamically typed, object-oriented language. Once I complete these notes, I plan to implement my own interpreter based on <i>clox</i>, the book&apos;s more efficient C-based interpreter.
+      <i>jlox</i> and Lox are described in <a href="https://craftinginterpreters.com/">Crafting Interpreters</a> (2021), by Robert Nystrom. Lox is a simple, dynamically typed, object-oriented language. I have additionally begun implementing an interpreter based on <i>clox</i>, the book&apos;s more efficient C-based interpreter &ndash; see its repository <a href="https://github.com/jhelsby/clox">here</a>.
     </p >,
     repo: "https://github.com/jhelsby/jlox-notes"
   };
