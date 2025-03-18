@@ -68,6 +68,17 @@ const experiences: Entry[] = [
     </div>
   },
   {
+    title: "Software Development Engineering Intern",
+    company: "AWS, Berlin",
+    start: "April 2025",
+    end: "June 2025",
+    description: <div>
+      <p>
+        Starting in April, I will be undertaking a Software Development Engineering internship at AWS Berlin, working on the Amazon Redshift team. This is a return internship offer following my Amazon internship last year. I&apos;m extremely grateful for the opportunity to return to Amazon, experience working life at AWS, and work outside of the UK for the first time.
+      </p>
+    </div>
+  },
+  {
     title: "Software Development Engineer Intern",
     company: "Amazon, London",
     start: "June 2024",
