@@ -34,7 +34,7 @@ const body = <div>
         <li><a href="https://www.aboutamazon.com/news/workplace/amazon-interview-best-tips">An Amazon recruiting manager offers his 3 best tips for a successful job interview</a>.</li>
         <li> <a href="https://www.google.com/about/careers/applications/interview-tips/">Interviewing at Google: best practices, advice, and tips</a>.</li>
     </ul>
-    <h3>Coding Interviews</h3>
+    <h3 id="coding-interviews">Coding Interviews</h3>
     <p>I think it can be good to start preparing for coding interviews as soon as possible, as they can be very challenging. Here are some resources I found useful:</p>
     <ul>
         <li>Like countless others, I learned the basics of Data Structures & Algorithms for coding interviews from the book <a href="https://www.crackingthecodinginterview.com/">Cracking the Coding Interview</a>, and used <a href="https://leetcode.com/">LeetCode</a> to practice.</li>
