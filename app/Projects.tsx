@@ -54,6 +54,7 @@ const DictionWave: ProjectFunction = () => {
           <source src="/dictionwave_demo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <p>I also built a related word-categorising tool called DictionMap, whose repository can be seen <a href="https://github.com/jhelsby/DictionMap">here</a>.</p>
       </div>),
     details: <div>
       <p>DictionWave uses fastText word embeddings trained on <a href="https://en.wikipedia.org/wiki/Common_Crawl">Common Crawl</a> data to calculate cosine similarities between words. It additionally applies a ranking algorithm based on word frequency, allowing the user to view rarer words as desired, alongside optional randomness. For further details, please see the implementation, in <a href="https://github.com/jhelsby/DictionWave/blob/main/similarity_core.py">similarity_core.py</a>.</p>
