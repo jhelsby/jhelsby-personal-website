@@ -73,7 +73,7 @@ const Conduit: ProjectFunction = () => {
     description: (
       <div>
         <p>Conduit is an LLM-based text editor with an intuitive graphical interface. It allows you to employ ChatGPT, Claude, Gemini and other LLMs as AI writing assistants, without having to type in any prompts. Please expand the Details tab below for some demo images, and a brief scenario walkthrough.</p>
-        <p>Conduit is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. Dan built <a href="https://github.com/conduits-link/core">frontend</a>, which is written in TypeScript and Next.js. I wrote the <a href="https://github.com/conduits-link/backend">backend</a> in Python, Django and PostgreSQL, and hosted it using Heroku.  Currently implemented features include:</p>
+        <p>Conduit is the product of a collaboration between myself and <a href="https://github.com/dan-smith-tech">Dan Smith</a>. We conceived and developed the idea together. Dan built the <a href="https://github.com/conduits-link/core">frontend</a>, which is written in TypeScript and Next.js. I wrote the <a href="https://github.com/conduits-link/backend">backend</a> in Python, Django and PostgreSQL, and hosted it using Heroku. Features include:</p>
         <ul>
           <li>User account registration and authentication using <a href="https://en.wikipedia.org/wiki/JSON_Web_Token">JWTs</a> (JSON Web Tokens).</li>
           <li>File and custom AI prompt storage with <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a> (Create, Read, Update and Delete) capabilities.</li>
