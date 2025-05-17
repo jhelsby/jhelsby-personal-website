@@ -63,7 +63,7 @@ const experiences: Entry[] = [
     end: "September 2025",
     description: <div>
       <p>
-        I am extremely excited to say that this summer, I will be undertaking a Software Engineering internship at Meta London, working out of the King&apos;s Cross office. I feel hugely fortunate to have this fantastic opportunity, and can&apos;t wait to get started.
+        I am excited to say that I&apos;ll be undertaking a Software Engineering internship at Meta London this summer, working out of the King&apos;s Cross office. I feel hugely fortunate to have this opportunity, and can&apos;t wait to get started.
       </p>
     </div>
   },
@@ -74,7 +74,7 @@ const experiences: Entry[] = [
     end: "June 2025",
     description: <div>
       <p>
-        I&apos;m currently undertaking a Software Development Engineering internship at AWS Berlin, working on the <a href="https://aws.amazon.com/redshift/">Amazon Redshift</a> Control Plane team. This is a return internship offer following my Amazon internship last year. I&apos;m extremely grateful for the opportunity to return to Amazon, experience working life at AWS, and work outside of the UK for the first time.
+        I&apos;m currently undertaking a Software Development Engineering internship at AWS Berlin, working on the <a href="https://aws.amazon.com/redshift/">Amazon Redshift</a> Control Plane team. This is a return internship offer following my Amazon internship last year. I&apos;m very grateful for the opportunity to return to Amazon, experience working life at AWS, and work outside of the UK for the first time.
       </p>
     </div>
   },
