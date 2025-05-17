@@ -55,10 +55,10 @@ const SidebarToggle = () => {
     { text: 'Home', url: '/' },
     { text: 'About', url: '/about' },
     { text: 'Projects', url: '/#projects' },
+    { text: 'Blog', url: '/blog' },
     { text: 'GitHub', url: 'https://github.com/jhelsby/' },
     { text: 'LinkedIn', url: 'https://www.linkedin.com/in/johnhelsby/' },
     { text: 'CV', url: '/cv' },
-    { text: 'Blog', url: '/blog' },
     { text: 'Contact', url: '/contact' }
     // Add more links as needed
   ];
