@@ -120,7 +120,6 @@ const Conduit: ProjectFunction = () => {
         </ul>
       </div>
     ),
-    url: "https://www.conduits.link/",
     repo: "https://github.com/conduits-link/"
   };
 }
