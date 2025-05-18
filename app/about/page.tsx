@@ -79,6 +79,17 @@ const experiences: Entry[] = [
     </div>
   },
   {
+    title: "Software Engineering Intern",
+    company: "Stealth Startup",
+    start: "January 2025",
+    end: "March 2025",
+    description: <div>
+      <p>
+        Between my Amazon internships, I worked at a startup building a web application MVP in JavaScript, Node.js, Express.js, MySQL, and Docker.
+      </p>
+    </div>
+  },
+  {
     title: "Software Development Engineer Intern",
     company: "Amazon, London",
     start: "June 2024",
