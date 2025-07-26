@@ -63,7 +63,7 @@ const experiences: Entry[] = [
     end: "September 2025",
     description: <div>
       <p>
-        I am excited to say that I&apos;ll be undertaking a Software Engineering internship at Meta London this summer, working out of the King&apos;s Cross office. I feel hugely fortunate to have this opportunity, and can&apos;t wait to get started.
+        This internship is at Meta&apos;s <a href="https://www.dezeen.com/2022/03/31/meta-kings-cross-office-bennetts-associates/">King&apos;s Cross office</a>. I&apos;m working on the Detection Foundations team, within the Data, Developers, and AI Infra Group. My project involves building a self-supervised learning system to improve detector precision. I also got the chance to add a new feature to the Meta open-source forecasting library Kats. The public-facing code for this (not the full feature unfortunately!) can be found in <a href="https://github.com/facebookresearch/Kats/commit/8624666ad6307a455ee19826ca23edeef4fab68e">this GitHub commit</a>.
       </p>
     </div>
   },
@@ -74,7 +74,7 @@ const experiences: Entry[] = [
     end: "June 2025",
     description: <div>
       <p>
-        I&apos;m currently undertaking a Software Development Engineering internship at AWS Berlin, working on the <a href="https://aws.amazon.com/redshift/">Amazon Redshift</a> Control Plane team. This is a return internship offer following my Amazon internship last year. I&apos;m very grateful for the opportunity to return to Amazon, experience working life at AWS, and work outside of the UK for the first time.
+        I worked on the <a href="https://aws.amazon.com/redshift/">Amazon Redshift</a> Control Plane team. This was a return internship offer following my Amazon internship last year. I am very grateful to have had the opportunity to return to Amazon, and had a great time experiencing working life at AWS (and in Berlin &ndash; my first time working outside of the UK!).
       </p>
     </div>
   },
