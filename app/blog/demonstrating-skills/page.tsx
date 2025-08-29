@@ -13,7 +13,7 @@ const body = <div>
         For the technical side, I would recommend choosing the most challenging projects you can, and trying to use the latest tech. Make sure you&apos;re using tech and skills you actually want to learn, too! The way I see it, if you&apos;re always doing the most challenging thing you can manage, it will always reflect the best of your ability.
     </p>
     <p>
-        You also want to make sure that the code quality is high - well structured, unit tested (perhaps integration tests), and so on. There are many resources on this, Clean Code by Robert Martin is a classic but also plenty of stuff on YouTube. This will ensure your code quality is high, expose you to important software engineering principles you&apos;ll use on the job, and be noticed by anyone looking through your code.
+        You also want to make sure that the code quality is high - well structured, unit tested, perhaps integration tests, and so on. There are many resources on this, Clean Code by Robert Martin is a classic but also plenty of stuff on YouTube. This will ensure your code quality is high, expose you to important software engineering principles you&apos;ll use on the job, and be noticed by anyone looking through your code.
     </p>
     <p>
         I&apos;d also say that it&apos;s important to pursue personal projects you&apos;re genuinely interested in. This will motivate you to do a good job, and also means you know what "good" is. You can look at your project from a customer perspective and try to meet your own high standards. This will also help a lot for the real-world impact side of things.
