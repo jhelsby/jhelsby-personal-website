@@ -8,7 +8,7 @@ export default function Home() {
     <div id="outer-container">
       <Sidebar />
       <div id="page-wrap">
-        <h1> <SidebarToggle /> John Helsby&apos;s Personal Website.</h1>
+        <h1> <SidebarToggle /> John Lu Helsby&apos;s Personal Website.</h1>
 
         <div className="photo-container">
           <img
@@ -17,7 +17,7 @@ export default function Home() {
             className="photo"
           />
           <div>
-            <p>Welcome to my coding website! I&apos;m John Helsby, a software engineer and a final-year Computer Science & Mathematics BSc (Hons) student at the University of Bath, United Kingdom. I previously undertook Software Engineering internships at Meta, Amazon, AWS, and Wolfram Research.</p>
+            <p>Welcome to my coding website! I&apos;m John Lu Helsby, a software engineer and a final-year Computer Science & Mathematics BSc (Hons) student at the University of Bath, United Kingdom. I previously undertook Software Engineering internships at Meta, Amazon, AWS, and Wolfram Research.</p>
             <p>I&apos;m a passionate believer in the power of computing and technology, appropriately applied, to solve important problems and benefit humanity as a whole. I&apos;m particularly interested in scalable systems, distributed computing, and artificial intelligence.
             </p>
           </div>
