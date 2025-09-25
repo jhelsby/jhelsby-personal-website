@@ -71,6 +71,7 @@ const experiences: Entry[] = [
     company: "Meta, London",
     start: "June 2025",
     end: "September 2025",
+    tools: "Python, PyTorch, pandas, Matplotlib, Thrift, Kats.",
     description: <div>
       <p>
         This internship was at Meta&apos;s <a href="https://www.dezeen.com/2022/03/31/meta-kings-cross-office-bennetts-associates/">King&apos;s Cross office</a>. I worked on the Detection Foundation team, within the Data, Developers, and AI Infra Group. My project involved building a self-supervised learning system to improve detector precision. I also got the chance to add a new feature to the Meta open-source forecasting library Kats. The public-facing code for this (not the full feature unfortunately!) can be found in <a href="https://github.com/facebookresearch/Kats/commit/8624666ad6307a455ee19826ca23edeef4fab68e">this GitHub commit</a>.
@@ -82,6 +83,7 @@ const experiences: Entry[] = [
     company: "AWS, Berlin",
     start: "April 2025",
     end: "June 2025",
+    tools: "Python, Java, TypeScript, React, PostgreSQL, Git, Smithy.",
     description: <div>
       <p>
         I worked on the <a href="https://aws.amazon.com/redshift/">Amazon Redshift</a> Control Plane team. This was a return internship offer following my Amazon internship last year. I am very grateful to have had the opportunity to return to Amazon, and had a great time experiencing working life at AWS (and in Berlin &ndash; my first time working outside of the UK!).
@@ -93,9 +95,10 @@ const experiences: Entry[] = [
     company: "Stealth Startup",
     start: "January 2025",
     end: "March 2025",
+    tools: "JavaScript, Node.js, Express.js, Angular, MySQL, Docker.",
     description: <div>
       <p>
-        Between my Amazon internships, I worked at a startup building a web application MVP in JavaScript, Node.js, Express.js, MySQL, and Docker.
+        Between my Amazon internships, I worked at a startup building a web application MVP.
       </p>
     </div>
   },
