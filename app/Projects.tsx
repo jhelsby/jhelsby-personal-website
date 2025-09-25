@@ -139,7 +139,7 @@ const LoxInterpreters: ProjectFunction = () => {
 const Deform: ProjectFunction = () => {
   return {
     summary: <p>
-      A real-time DSP waveshaper audio effect written in C++, for use in <a href="https://cycling74.com/products/max">Max/ MSP</a>.
+      A real-time DSP waveshaper audio effect written in C++, for use in <a href="https://cycling74.com/products/max">Max/MSP</a>.
     </p>,
     description: <div>
       <p>
