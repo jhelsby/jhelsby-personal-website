@@ -28,7 +28,18 @@ const education: Entry[] = [
     tools: "Python, Java, C, Git, Django, NumPy, Haskell.",
     description: <div>
       <p>My course includes a year-long industrial placement after my second year.</p>
-      <p>I am currently on my placement year. On the Computer Science side of my course, I&apos;ve studied:</p>
+      <p>I am currently in my final year, and have chosen the following units:</p>
+      <ul>
+        <li>Reinforcement Learning.</li>
+        <li>Logic and Semantics of Programming Languages.</li>
+        <li>Computational Complexity.</li>
+        <li>Differential Geometry.</li>
+        <li>Projective Geometry.</li>
+        <li>Topology.</li>
+        <li>Graph Theory.</li>
+      </ul>
+      <p>I will also be undertaking an individual research project &ndash; I&apos;ll update this once the topic and my advisor has been confirmed.</p>
+      <p>In previous years, all my units were compulsory. On the Computer Science side of my course, I studied:</p>
       <ul>
         <li>core principles of programming in Python, Java and C.</li>
         <li>data structures and algorithms.</li>
@@ -40,7 +51,7 @@ const education: Entry[] = [
       <p>
         As part of an extended group project, I also acted as Technical Lead for the backend of a web application designed to automate the process of booking boats into harbours. The backend and accompanying tests were written in Python, Django, and the Django REST Framework, and deployed onto the web using GitHub Actions, Heroku and MailGun.
       </p>
-      <p>The Mathematics side of my course so far has focused on Algebra and Analysis. My studies have included:</p>
+      <p>The Mathematics side of my course so far has focused on Algebra and Analysis. My studies included:</p>
       <ul>
         <li>Fundamentals of logic, numbers, proofs, sets, and functions.</li>
         <li>Sequences, series, convergence. Properties of one-dimensional real functions.</li>
@@ -50,7 +61,6 @@ const education: Entry[] = [
         <li>Vector spaces and linear algebra.</li>
         <li>Groups, rings and modules.</li>
       </ul>
-      <p>In the my final year of my course, students can choose which modules they wish to study. I hope to take Computer Science courses in Bayesian machine learning, advanced algorithms and complexity, and natural language processing; and Mathematics courses in numerical analysis, optimisation methods of operational research, numerical optimisation and/or graph theory.</p>
     </div>
   },
 ];
@@ -63,7 +73,7 @@ const experiences: Entry[] = [
     end: "September 2025",
     description: <div>
       <p>
-        This internship is at Meta&apos;s <a href="https://www.dezeen.com/2022/03/31/meta-kings-cross-office-bennetts-associates/">King&apos;s Cross office</a>. I&apos;m working on the Detection Foundations team, within the Data, Developers, and AI Infra Group. My project involves building a self-supervised learning system to improve detector precision. I also got the chance to add a new feature to the Meta open-source forecasting library Kats. The public-facing code for this (not the full feature unfortunately!) can be found in <a href="https://github.com/facebookresearch/Kats/commit/8624666ad6307a455ee19826ca23edeef4fab68e">this GitHub commit</a>.
+        This internship was at Meta&apos;s <a href="https://www.dezeen.com/2022/03/31/meta-kings-cross-office-bennetts-associates/">King&apos;s Cross office</a>. I worked on the Detection Foundation team, within the Data, Developers, and AI Infra Group. My project involved building a self-supervised learning system to improve detector precision. I also got the chance to add a new feature to the Meta open-source forecasting library Kats. The public-facing code for this (not the full feature unfortunately!) can be found in <a href="https://github.com/facebookresearch/Kats/commit/8624666ad6307a455ee19826ca23edeef4fab68e">this GitHub commit</a>.
       </p>
     </div>
   },
