@@ -8,7 +8,7 @@ interface Entry {
   title: string;
   company: string;
   start: string;
-  end: string;
+  end?: string;
   tools?: string;
   description: ReactNode;
 }
@@ -31,14 +31,12 @@ const education: Entry[] = [
       <p>I am currently in my final year, and have chosen the following units:</p>
       <ul>
         <li>Reinforcement Learning.</li>
-        <li>Logic and Semantics of Programming Languages.</li>
-        <li>Computational Complexity.</li>
         <li>Differential Geometry.</li>
         <li>Projective Geometry.</li>
         <li>Topology.</li>
         <li>Graph Theory.</li>
       </ul>
-      <p>I will also be undertaking an individual research project &ndash; I&apos;ll update this once the topic and my advisor has been confirmed.</p>
+      <p>I will also be undertaking an extended individual research project &ndash; I&apos;ll update this once the topic and my advisor has been confirmed.</p>
       <p>In previous years, all my units were compulsory. On the Computer Science side of my course, I studied:</p>
       <ul>
         <li>core principles of programming in Python, Java and C.</li>
@@ -66,6 +64,16 @@ const education: Entry[] = [
 ];
 
 const experiences: Entry[] = [
+  {
+    title: "Software Engineer",
+    company: "Meta, London",
+    start: "Starting August 2026",
+    description: <div>
+      <p>
+        Following my internship at Meta, I&apos;m delighted to share that I will be returning as a full-time Software Engineer after I graduate.
+      </p>
+    </div>
+  },
   {
     title: "Software Engineering Intern",
     company: "Meta, London",
@@ -145,8 +153,11 @@ const Section: React.FC<SectionProps> = ({ id, entries, sectionTitle }) => {
       <h2>{sectionTitle}</h2>
       {entries.map((entry, index) => (
         <div key={index} style={{ marginBottom: '2rem' }}>
-          <p><strong>{entry.title}, {entry.company}.</strong><br />{entry.start} &ndash; {entry.end}</p>
-          {entry.tools !== undefined && (<p>Tools used: <i>{entry.tools}</i></p>)}
+          <p>
+            <strong>{entry.title}, {entry.company}.</strong><br />
+            {entry.start}{entry.end ? ` – ${entry.end}` : ''}
+          </p>
+          {entry.tools && (<p>Tools used: <i>{entry.tools}</i></p>)}
           {entry.description}
         </div>
       ))}
