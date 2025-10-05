@@ -65,7 +65,7 @@ const education: Entry[] = [
 
 const experiences: Entry[] = [
   {
-    title: "Software Engineer",
+    title: "Incoming Software Engineer",
     company: "Meta, London",
     start: "Starting August 2026",
     description: <div>
