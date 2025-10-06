@@ -18,7 +18,7 @@ export default function CV() {
       <Sidebar />
       <div id="page-wrap">
         <h1><SidebarToggle /> Request a copy of my CV. </h1>
-        <p>You can request a copy of my CV using the form below.</p>
+        <p>You can request a copy of my CV using the form below. Please note that this is for recruiters and the like, rather than people looking for inspiration for their own CV &ndash; sorry about that!</p>
         <p>Alternatively, please feel free to <a href="/contact">contact me by email</a>, or <a href="https://www.linkedin.com/in/johnhelsby/" >connect with me on LinkedIn</a> if you&apos;d prefer.</p>
         <Form subject='New CV Request from jhelsby.com' formInputs={formInputs} />
       </div>
