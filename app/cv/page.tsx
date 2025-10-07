@@ -6,7 +6,7 @@ import Form from '../Form';
 
 const formInputs = [
   { name: "name", label: "Name", type: "text", validation: { required: 'Full name is required', maxLength: 30 } },
-  { name: "organisation", label: "Organisation (optional)", type: "text", validation: { maxLength: 30 } },
+  { name: "organisation", label: "Organisation", type: "text", validation: { required: 'Organisation is required', maxLength: 30 } },
   { name: "email", label: "Email", type: "email", validation: { required: 'Enter your email', maxLength: 254, pattern: { value: /^\S+@\S+$/i, message: 'Please enter a valid email' } } },
   { name: "reason", label: "Brief reason for request", type: "textarea", validation: { required: 'Please enter a brief reason for your request' } },
 ];
