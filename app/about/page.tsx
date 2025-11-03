@@ -36,7 +36,7 @@ const education: Entry[] = [
         <li>Topology.</li>
         <li>Graph Theory.</li>
       </ul>
-      <p>I&apos;m also undertaking an individual research project, working on an area of Visual Computing called Dynamic Scene Graph Generation (or &quot;spatio-temporal scene graph generation&quot;) under the supervision of Professor Michael Ying Yang. You can read more about this problem space <a href="https://arxiv.org/abs/1912.06992">here</a>.</p>
+      <p>I&apos;m also undertaking a dissertation project, working on an area of Visual Computing called Dynamic Scene Graph Generation (or &quot;spatio-temporal scene graph generation&quot;) under the supervision of Professor Michael Ying Yang. You can read more about this problem space <a href="https://arxiv.org/abs/1912.06992">here</a>.</p>
       <p>In previous years, all my units were compulsory. On the Computer Science side of my course, I studied:</p>
       <ul>
         <li>core principles of programming in Python, Java and C.</li>
