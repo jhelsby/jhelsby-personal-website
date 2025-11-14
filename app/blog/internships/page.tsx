@@ -19,7 +19,7 @@ const body = <div>
         <li>Consider developing a portfolio website &ndash; some application processes even request these.</li>
         <li>Network, in any appropriate environment. Whether it comes naturally to you or not, I think it can be an unparalleled learning opportunity, and a great chance to meet other people who are passionate about technology and problem-solving.</li>
         <li>Pursue your tech interests, whether through practical experience, blogs, books, projects or elsewhere. Embrace your curiosity and learn as much as possible.</li>
-        <li>Participate in hackathons.</li>
+        <li>Participate in hackathons. Please note, I never actually did this myself for my internship applications, but I have heard it can be helpful.</li>
         <li>Keep an eye out for further opportunities, such as career events, conferences (in-person or virtual), and company events.</li>
         <li>Get some leadership and teamwork experience.</li>
         <li>Consider taking certifications you are interested in.</li>
