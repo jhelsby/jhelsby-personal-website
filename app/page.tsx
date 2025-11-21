@@ -36,11 +36,8 @@ export default function Home() {
             </ul>
           </div>
 
-          <p>Finally, a few of my coding projects can be found below. Please select a project to read more, view the codebase, or see the application in action.</p>
+          <p>Finally, a few of my coding projects can be found below. Please select a project to read more, view the codebase, or see the application in action. Thanks for reading!</p>
 
-          <p> Thank you for reading &ndash; and please don&apos;t hesitate to <a href="/contact">get in touch</a> or <a href="https://www.linkedin.com/in/johnhelsby/" >connect on LinkedIn</a> if you have any comments or questions. Have a great rest of your day!</p>
-
-          <p>- John. 😊</p>
           <h2>Projects.</h2>
         </div>
         <div id="projects">
