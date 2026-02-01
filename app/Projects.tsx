@@ -127,7 +127,7 @@ const Conduit: ProjectFunction = () => {
 const LoxInterpreters: ProjectFunction = () => {
   return {
     summary: <p>
-      A work-in-progress implementation of <i>clox</i>, an interpreter for the Lox programming language written in C. clox comprises of a bytecode compiler and a virtual machine with garbage collection. I have also written <a href="https://github.com/jhelsby/jlox-notes">complete notes on <i>jlox</i></a>, a tree-walk interpreter for Lox written in Java.
+      An implementation of <i>clox</i>, an interpreter for the Lox programming language written in C. clox comprises of a bytecode compiler and a virtual machine with garbage collection. I have also written <a href="https://github.com/jhelsby/jlox-notes">complete notes on <i>jlox</i></a>, a tree-walk interpreter for Lox written in Java.
     </p>,
     description: <p>
       clox, jlox and Lox are described in <a href="https://craftinginterpreters.com/">Crafting Interpreters</a> (2021), by Robert Nystrom. Lox is a simple, dynamically typed, object-oriented language.
