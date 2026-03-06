@@ -23,8 +23,8 @@ function Projects() {
   const buttonOptions = [
     { label: "This website", project: ThisWebsite },
     { label: "DictionWave", project: DictionWave },
-    { label: "Conduit", project: Conduit },
     { label: 'Lox Interpreters', project: LoxInterpreters },
+    { label: "Conduit", project: Conduit },
     { label: "[deform~]", project: Deform }
   ];
 
