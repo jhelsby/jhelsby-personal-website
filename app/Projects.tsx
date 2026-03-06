@@ -62,7 +62,6 @@ const DictionWave: ProjectFunction = () => {
       <p>The web application logic, implemented with Flask, HTML, and CSS, can be found in <a href="https://github.com/jhelsby/DictionWave/blob/main/app.py">app.py</a> and <a href="https://github.com/jhelsby/DictionWave/blob/main/templates/index.html">index.html</a>. I tried to keep the frontend design deliberately minimal, functionality-focused, and (though this is of course completely subjective!) fun to use.</p>
       <p> Finally, please note that to limit costs, the live site is currently using a restricted dataset of 73,000 words rather than the full 1.2 million. If you wish to see the application using the full dataset, you can run it locally (or elsewhere) by following the instructions provided in the repository readme, <a href="https://github.com/jhelsby/DictionWave/blob/main/readme.md#development-setup">here</a>.</p>
     </div>,
-    url: "https://dictionwave-4d2e2625bf14.herokuapp.com/",
     repo: "https://github.com/jhelsby/DictionWave"
   };
 }
