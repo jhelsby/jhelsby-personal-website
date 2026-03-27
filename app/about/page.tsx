@@ -65,17 +65,6 @@ const education: Entry[] = [
 
 const experiences: Entry[] = [
   {
-    title: "Software Engineer Intern",
-    company: "Google, Zurich",
-    start: "June 2026",
-    end: "August 2026",
-    description: <div>
-      <p>
-        I am so excited to share that I will be working at <a href="https://www.greaterzuricharea.com/en/success-stories/google-switzerland">Google Zurich</a> this summer as a Software Engineer intern on the Google Search Applied AI Platform team.
-      </p>
-    </div>
-  },
-  {
     title: "Software Engineering Intern",
     company: "Meta, London",
     start: "June 2025",
