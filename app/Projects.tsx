@@ -9,7 +9,7 @@ type ProjectInfo = {
   description: ReactNode;
   details?: ReactNode;
   url?: string; // Use ? because not all projects are deployable.
-  repo: string;
+  repo?: string;
 }
 
 // ###########################
@@ -22,6 +22,7 @@ type ProjectInfo = {
 function Projects() {
   const buttonOptions = [
     { label: "This website", project: ThisWebsite },
+    { label: "OvDSGG", project: OvDSGG },
     { label: "DictionWave", project: DictionWave },
     { label: 'Lox Interpreters', project: LoxInterpreters },
     { label: "Conduit", project: Conduit },
@@ -40,6 +41,16 @@ const ThisWebsite: ProjectFunction = () => {
     summary: <p>I built this site with HTML, CSS, TypeScript, React and Next.js.</p>,
     description: (<div><p>The Request My CV and Contact Me pages use <a href="https://web3forms.com/">Web3Forms</a>; I deployed the site with <a href="https://vercel.com/">Vercel</a>; and I registered this domain with <a href="https://porkbun.com/">Porkbun</a>.</p></div>),
     repo: "https://github.com/jhelsby/jhelsby-personal-website"
+  };
+}
+
+const OvDSGG: ProjectFunction = () => {
+  return {
+    summary: <p>Computer Vision research project completed as part of my undergraduate dissertation, developing an end-to-end framework for open-vocabulary dynamic scene graph generation. Supervised by Professor Michael Ying Yang at University of Bath. Built, trained, and evaluated the model using PyTorch, Transformers, GroundingDINO, and BERT. Submitted for peer review to the British Machine Vision Conference (BMVC) 2026.</p>,
+    description:
+      <p>
+        Ongoing conference submission. I&apos;ll link the arXiv preprint and make the codebase public once the submission is complete.
+      </p>,
   };
 }
 
@@ -62,7 +73,6 @@ const DictionWave: ProjectFunction = () => {
       <p>The web application logic, implemented with Flask, HTML, and CSS, can be found in <a href="https://github.com/jhelsby/DictionWave/blob/main/app.py">app.py</a> and <a href="https://github.com/jhelsby/DictionWave/blob/main/templates/index.html">index.html</a>. I tried to keep the frontend design deliberately minimal, functionality-focused, and (though this is of course completely subjective!) fun to use.</p>
       <p> Finally, please note that to limit costs, the live site is currently using a restricted dataset of 73,000 words rather than the full 1.2 million. If you wish to see the application using the full dataset, you can run it locally (or elsewhere) by following the instructions provided in the repository readme, <a href="https://github.com/jhelsby/DictionWave/blob/main/readme.md#development-setup">here</a>.</p>
     </div>,
-    repo: "https://github.com/jhelsby/DictionWave"
   };
 }
 
@@ -270,7 +280,7 @@ function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProject
     <div>
       {summary}
       <div style={urlStyle}>
-        {<a href={repo} target="_blank" rel="noopener noreferrer" className="button-link" style={urlStyle}>
+        {repo && <a href={repo} target="_blank" rel="noopener noreferrer" className="button-link" style={urlStyle}>
           <span style={urlTextStyle}>GitHub</span>
           <Image
             src="/github-mark.svg"
