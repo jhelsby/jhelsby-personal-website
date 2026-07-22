@@ -18,13 +18,11 @@ export default function Home() {
           />
           <div>
             <p>Welcome to my coding website! I&apos;m John, a software engineer at Meta London, working in the <a href="https://engineering.fb.com/category/data-infrastructure/">AI & Data Infrastructure</a> organisation.</p>
-            <p>I&apos;m a passionate believer in the power of computing and technology, appropriately applied, to solve important problems and benefit humanity as a whole. I&apos;m particularly interested in scalable systems, distributed computing, and artificial intelligence.
+            <p>I&apos;m a passionate believer in the power of computing and technology, appropriately applied, to solve important problems and benefit humanity as a whole. I&apos;m particularly interested in scalable systems, distributed computing, and artificial intelligence. For some biographical information, or more on my technological interests and experience, please see:
             </p>
           </div>
         </div>
         <div>
-          <p>I am most experienced with Python, Java, C, C++, JavaScript, TypeScript, React, SQL, and AWS. I&apos;m always looking to expand my skillset and learn new technologies. For some biographical information, or more on my technological interests and experience, please see:</p>
-
           <div>
             <ul>
               <li><a href="/about">About Me</a>.</li>
