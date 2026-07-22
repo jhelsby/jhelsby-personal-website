@@ -25,45 +25,21 @@ const education: Entry[] = [
     company: "University of Bath",
     start: "September 2022",
     end: "June 2026",
-    tools: "Python, Java, C, Git, Django, NumPy, Haskell.",
-    description: <div>
-      <p>My course includes a year-long industrial placement after my second year.</p>
-      <p>I am currently in my final year, and have chosen the following units:</p>
-      <ul>
-        <li>Reinforcement Learning.</li>
-        <li>Differential Geometry.</li>
-        <li>Projective Geometry.</li>
-        <li>Topology.</li>
-        <li>Graph Theory.</li>
-      </ul>
-      <p>I&apos;m also undertaking a dissertation project, working on an area of Visual Computing called Dynamic Scene Graph Generation (or &quot;spatio-temporal scene graph generation&quot;) under the supervision of Professor Michael Ying Yang. You can read more about this problem space <a href="https://arxiv.org/abs/1912.06992">here</a>.</p>
-      <p>In previous years, all my units were compulsory. On the Computer Science side of my course, I studied:</p>
-      <ul>
-        <li>core principles of programming in Python, Java and C.</li>
-        <li>data structures and algorithms.</li>
-        <li>comparative programming languages.</li>
-        <li>artificial intelligence, including constraint satisfaction, value and policy iteration, k-nearest neighbours, Naive Bayes classifiers, feature engineering, and neural networks. I also implemented a small neural network with backpropagation from scratch in Python and NumPy, based on the textbook <a href="http://neuralnetworksanddeeplearning.com/"><i>Neural Networks and Deep Learning</i></a> by Michael Nielsen.</li>
-        <li>foundations of computation, including finite automata, context-free grammars, and Turing machines.</li>
-        <li>functional programming, Haskell, and the Lambda calculus.</li>
-      </ul>
-      <p>
-        As part of an extended group project, I also acted as Technical Lead for the backend of a web application designed to automate the process of booking boats into harbours. The backend and accompanying tests were written in Python, Django, and the Django REST Framework, and deployed onto the web using GitHub Actions, Heroku and MailGun.
-      </p>
-      <p>The Mathematics side of my course so far has focused on Algebra and Analysis. My studies included:</p>
-      <ul>
-        <li>Fundamentals of logic, numbers, proofs, sets, and functions.</li>
-        <li>Sequences, series, convergence. Properties of one-dimensional real functions.</li>
-        <li>Normed spaces, metric spaces and compactness.</li>
-        <li>Multivariate calculus.</li>
-        <li>Complex analysis.</li>
-        <li>Vector spaces and linear algebra.</li>
-        <li>Groups, rings and modules.</li>
-      </ul>
-    </div>
+    description: <p>For my dissertation project, I worked on an area of Visual Computing called Dynamic Scene Graph Generation (or &quot;spatio-temporal scene graph generation&quot;) under the supervision of Professor Michael Ying Yang. You can read more about this problem space <a href="https://arxiv.org/abs/1912.06992">here</a>.</p>
   },
 ];
 
 const experiences: Entry[] = [
+  {
+    title: "Software Engineer",
+    company: "Meta, London",
+    start: "July 2026",
+    description: <div>
+      <p>
+        Working in the <a href="https://engineering.fb.com/category/data-infrastructure/">AI & Data Infrastructure</a> organisation.
+      </p>
+    </div>
+  },
   {
     title: "Software Engineering Intern",
     company: "Meta, London",
