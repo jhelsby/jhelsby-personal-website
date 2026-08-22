@@ -61,12 +61,11 @@ const OvDSGG: ProjectFunction = () => {
       <p>
         OvDSGG is an end-to-end framework for open-vocabulary dynamic scene
         graph generation, enabling recognition of objects and relationships
-        beyond a fixed training vocabulary. The paper and source code are
-        publicly available.
+        beyond a fixed training vocabulary.
       </p>
     ),
     url: "https://arxiv.org/abs/2608.14835",
-    urlButtonText: "arXiv",
+    urlButtonText: "Read the paper on arXiv",
     repo: "https://github.com/jhelsby/ovdsgg",
   };
 };

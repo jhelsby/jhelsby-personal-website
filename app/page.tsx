@@ -34,7 +34,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <p>Finally, a few of my coding projects can be found below. Please select a project to read more, view the codebase, or see the application in action. Thanks for reading!</p>
+          <p>Finally, a few of my projects can be found below. Please select a project to read more, view the codebase, or see the application in action. Thanks for reading!</p>
 
           <h2>Projects.</h2>
         </div>
