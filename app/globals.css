@@ -185,6 +185,10 @@ blockquote footer {
   padding: 5px 5px;
 }
 
+.button-link:visited {
+  color: white;
+}
+
 .button-link:hover {
   background-color: #905e35;
 }
