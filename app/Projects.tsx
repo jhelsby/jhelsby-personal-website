@@ -46,13 +46,28 @@ const ThisWebsite: ProjectFunction = () => {
 
 const OvDSGG: ProjectFunction = () => {
   return {
-    summary: <p>Computer Vision research project completed as part of my undergraduate dissertation, developing an end-to-end framework for open-vocabulary dynamic scene graph generation. Supervised by Professor Michael Ying Yang at University of Bath. Built, trained, and evaluated the model using PyTorch, Transformers, GroundingDINO, and BERT. Submitted for peer review to the British Machine Vision Conference (BMVC) 2026.</p>,
-    description:
+    summary: (
       <p>
-        Ongoing conference submission. I&apos;ll link the arXiv preprint and make the codebase public once the submission is complete.
-      </p>,
+        Computer Vision research project completed as part of my undergraduate
+        dissertation, developing an end-to-end framework for open-vocabulary
+        dynamic scene graph generation. Supervised by Professor Michael Ying
+        Yang at the University of Bath. Built, trained, and evaluated the model
+        using PyTorch, Transformers, GroundingDINO, and BERT. Accepted at the
+        ECCV 2026 CONTEXTUS Workshop.
+      </p>
+    ),
+    description: (
+      <p>
+        OvDSGG is an end-to-end framework for open-vocabulary dynamic scene
+        graph generation, enabling recognition of objects and relationships
+        beyond a fixed training vocabulary. The paper and source code are
+        publicly available.
+      </p>
+    ),
+    url: "https://arxiv.org/abs/2608.14835",
+    repo: "https://github.com/jhelsby/ovdsgg",
   };
-}
+};
 
 const DictionWave: ProjectFunction = () => {
   return {
