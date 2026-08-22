@@ -9,6 +9,7 @@ type ProjectInfo = {
   description: ReactNode;
   details?: ReactNode;
   url?: string; // Use ? because not all projects are deployable.
+  urlButtonText?: string;
   repo?: string;
 }
 
@@ -65,6 +66,7 @@ const OvDSGG: ProjectFunction = () => {
       </p>
     ),
     url: "https://arxiv.org/abs/2608.14835",
+    urlButtonText: "arXiv",
     repo: "https://github.com/jhelsby/ovdsgg",
   };
 };
@@ -271,7 +273,7 @@ interface RenderProjectProps {
 }
 
 function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProjectProps) {
-  const { summary, description, details, url, repo } = projectData;
+  const { summary, description, details, url, urlButtonText = "App Website", repo } = projectData;
 
   const urlStyle = {
     display: 'flex',
@@ -304,7 +306,7 @@ function renderProject({ projectData, isExpanded, setIsExpanded }: RenderProject
             height={20}
           />
         </a>}
-        {url && <a href={url} target="_blank" rel="noopener noreferrer" className="button-link">App Website</a>}
+        {url && <a href={url} target="_blank" rel="noopener noreferrer" className="button-link">{urlButtonText}</a>}
       </div>
       {description}
       {details !== undefined && (
