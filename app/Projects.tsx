@@ -53,7 +53,7 @@ const OvDSGG: ProjectFunction = () => {
         dissertation, developing an end-to-end framework for open-vocabulary
         dynamic scene graph generation. Supervised by Professor Michael Ying
         Yang at the University of Bath. Built, trained, and evaluated the model
-        using PyTorch, Transformers, GroundingDINO, and BERT. Accepted at the
+        using PyTorch, Transformers, GroundingDINO, and BERT. Won Best Paper Award at the
         ECCV 2026 CONTEXTUS Workshop.
       </p>
     ),
